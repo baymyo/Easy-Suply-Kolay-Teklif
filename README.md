@@ -12,3 +12,5 @@ Kolay kurulum ve Kolay kullanım ile teklifleri mükkemmel derecede hızlandırm
 Ne yapmaktadır sizin için sisteme girilen hazır ürün dataları üzerinden en ucuzları sepete ekleyerek rakiplerinizin önüne geçmenizi sağlar.
 
 Ürünlerin toplanacağı adresten edeceğiniz kar oranına kadar herşeyi sizin için hesaplamakla kalmaz birde faturanızı oluşturur.
+
+Yapabileceklerini saymakla bitiremiyorum aslında tedarikçilere EXCEL dosyalarını gönderin onlar fiyatlarını güncellesin sizde sisteme import edin bu kadar.
