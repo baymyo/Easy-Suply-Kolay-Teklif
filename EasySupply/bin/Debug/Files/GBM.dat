@@ -1,0 +1,41 @@
+﻿<h3 style="color: #cc0000;">{SUBJECT}</h3>
+<p>
+  {MESSAGE}
+</p>
+<br />
+<hr />
+<h4 style="color: #454545;">FİRMA VE PROGRAM BİLGİLERİ!</h4>
+<p style="color: #646464;">
+  Firma / Ünvan
+  <br />
+  <b>{COMPANY}</b>&nbsp;(<var>{TICARIUNVAN}</var>)
+  <br />
+  <br />
+  Telefon
+  <br />
+  <b>{PHONE}</b>
+  <br />
+  <br />
+  GSM
+  <br />
+  <b>{GSM}</b>
+  <br />
+  <br />
+  Mail
+  <br />
+  <b>{MAIL}</b>
+  <br />
+  <br />
+  Web
+  <br />
+  <b>{WEB}</b>
+  <br />
+  <br />
+  Adres
+  <br />
+  <b>{ADDRESS}</b>
+  <br />
+  <br />
+  <br />
+  VALIDATE KEY	: <b>{VK}</b>&nbsp;&nbsp;|&nbsp;&nbsp;PRODUCT VERSION	: <b>{PV}</b>
+</p>

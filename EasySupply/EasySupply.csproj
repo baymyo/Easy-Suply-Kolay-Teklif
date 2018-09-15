@@ -1,0 +1,1093 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F226AC2-FD89-4DFD-881B-AC1C0DBA2CBA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasySupply</RootNamespace>
+    <AssemblyName>EasySupply</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <PublishUrl>D:\Publish\TTF\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://gazetede.net/TTF/</InstallUrl>
+    <ProductName>Kumanya Uygulaması</ProductName>
+    <PublisherName>baymyo yazılım</PublisherName>
+    <WebPage>index.htm</WebPage>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>applicationLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>425A579B3C942932E9BB1239AC29191D24379C22</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>EasySupply_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="BAYMYO.MultiSQLClient, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BAYMYO.OpenSource\BAYMYO.MultiSQLClient\bin\Debug\BAYMYO.MultiSQLClient.dll</HintPath>
+    </Reference>
+    <Reference Include="BAYMYO.UI, Version=1.0.0.25, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AllDatabaseClient\BAYMYO.OpenSource\BAYMYO.UI\bin\Debug\BAYMYO.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Design.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v11.1.Design, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.1.Design, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v11.1.Extensions, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.1.Design, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.1.Extensions, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.1.Printing, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v11.1.Design, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Commons.cs" />
+    <Compile Include="Core\CurrentPriceFormat.cs" />
+    <Compile Include="Core\Doviz.cs" />
+    <Compile Include="Core\Fatura.cs" />
+    <Compile Include="Core\Firma.cs" />
+    <Compile Include="Core\Kategori.cs" />
+    <Compile Include="Core\LookAndFeelSettings.cs" />
+    <Compile Include="Core\Mail.cs" />
+    <Compile Include="Core\Settings.cs" />
+    <Compile Include="Core\Stok.cs" />
+    <Compile Include="Core\Teklif.cs" />
+    <Compile Include="Core\TeklifDetay.cs" />
+    <Compile Include="Core\Urun.cs" />
+    <Compile Include="Core\UrunKatalog.cs" />
+    <Compile Include="Core\UrunRapor.cs" />
+    <Compile Include="L.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>L.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\xrpUrunKatalogID.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrpUrunKatalogID.Designer.cs">
+      <DependentUpon>xrpUrunKatalogID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifFatura.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifFatura.Designer.cs">
+      <DependentUpon>xrpTeklifFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrpUrunKatalog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrpUrunKatalog.Designer.cs">
+      <DependentUpon>xrpUrunKatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifToplamaFiyatsiz.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifToplamaFiyatsiz.Designer.cs">
+      <DependentUpon>xrpTeklifToplamaFiyatsiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifMaliyetRapor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifMaliyetRapor.Designer.cs">
+      <DependentUpon>xrpTeklifMaliyetRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifFormuFiyatsiz.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifFormuFiyatsiz.Designer.cs">
+      <DependentUpon>xrpTeklifFormuFiyatsiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifFormu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrpTeklifFormu.Designer.cs">
+      <DependentUpon>xrpTeklifFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rFrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rFrmMain.Designer.cs">
+      <DependentUpon>rFrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmCheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmCheckList.Designer.cs">
+      <DependentUpon>xFrmCheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmDoviz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmDoviz.Designer.cs">
+      <DependentUpon>xFrmDoviz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmExcelAktarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmExcelAktarim.Designer.cs">
+      <DependentUpon>xFrmExcelAktarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmGeriBildirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmGeriBildirim.Designer.cs">
+      <DependentUpon>xFrmGeriBildirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmFirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmFirma.Designer.cs">
+      <DependentUpon>xFrmFirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmHakkimizda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmHakkimizda.Designer.cs">
+      <DependentUpon>xFrmHakkimizda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmHizliStokGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmHizliStokGirisi.Designer.cs">
+      <DependentUpon>xFrmHizliStokGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmKategori.Designer.cs">
+      <DependentUpon>xFrmKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmSettings.Designer.cs">
+      <DependentUpon>xFrmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmStok.Designer.cs">
+      <DependentUpon>xFrmStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmStokDegisiklik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmStokDegisiklik.Designer.cs">
+      <DependentUpon>xFrmStokDegisiklik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmStokKarDegisiklik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmStokKarDegisiklik.Designer.cs">
+      <DependentUpon>xFrmStokKarDegisiklik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmTeklif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmTeklif.Designer.cs">
+      <DependentUpon>xFrmTeklif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmTeklifDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmTeklifDetay.Designer.cs">
+      <DependentUpon>xFrmTeklifDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmTeklifDetayDegisiklik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmTeklifDetayDegisiklik.Designer.cs">
+      <DependentUpon>xFrmTeklifDetayDegisiklik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmTrial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmTrial.Designer.cs">
+      <DependentUpon>xFrmTrial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmUrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmUrun.Designer.cs">
+      <DependentUpon>xFrmUrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmUrunKatalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmUrunKatalog.Designer.cs">
+      <DependentUpon>xFrmUrunKatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmMessageBox.Designer.cs">
+      <DependentUpon>xFrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmUrunRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmUrunRapor.Designer.cs">
+      <DependentUpon>xFrmUrunRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmValidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmValidate.Designer.cs">
+      <DependentUpon>xFrmValidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xFrmUrunYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xFrmUrunYeni.Designer.cs">
+      <DependentUpon>xFrmUrunYeni.cs</DependentUpon>
+    </Compile>
+    <Content Include="Files\FL.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\CTGPRD.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\DL.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\TFAK.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\GBM.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\profitrate48x.png" />
+    <None Include="Resources\profitrate48x1.png" />
+    <None Include="Resources\profitrate16x.png" />
+    <None Include="EasySupply_1_TemporaryKey.pfx" />
+    <None Include="Resources\feedback48x.png" />
+    <None Include="Resources\formHeadColor.png" />
+    <None Include="Resources\productNewList.png" />
+    <None Include="Resources\productUpdateList.png" />
+    <None Include="Properties\DataSources\CurrentPriceFormat.datasource" />
+    <None Include="Properties\DataSources\TeklifDetay1.datasource" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\check_all_delete.png" />
+    <None Include="Resources\check_all.png" />
+    <None Include="Resources\lisance48x.png" />
+    <None Include="Resources\storeQuick48x.png" />
+    <None Include="Resources\databaseNotRepair.png" />
+    <None Include="Resources\databaseRepair.png" />
+    <None Include="Resources\offerFormSingle.png" />
+    <None Include="Resources\offerFormMulti.png" />
+    <None Include="Resources\catalogNumber.png" />
+    <None Include="Resources\catalogID.png" />
+    <EmbeddedResource Include="L.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>L.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\xrpUrunKatalogID.resx">
+      <DependentUpon>xrpUrunKatalogID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrpTeklifFatura.resx">
+      <DependentUpon>xrpTeklifFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrpUrunKatalog.resx">
+      <DependentUpon>xrpUrunKatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrpTeklifToplamaFiyatsiz.resx">
+      <DependentUpon>xrpTeklifToplamaFiyatsiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrpTeklifMaliyetRapor.resx">
+      <DependentUpon>xrpTeklifMaliyetRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrpTeklifFormuFiyatsiz.resx">
+      <DependentUpon>xrpTeklifFormuFiyatsiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrpTeklifFormu.resx">
+      <DependentUpon>xrpTeklifFormu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rFrmMain.resx">
+      <DependentUpon>rFrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmCheckList.resx">
+      <DependentUpon>xFrmCheckList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmDoviz.resx">
+      <DependentUpon>xFrmDoviz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmExcelAktarim.resx">
+      <DependentUpon>xFrmExcelAktarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmGeriBildirim.resx">
+      <DependentUpon>xFrmGeriBildirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmFirma.resx">
+      <DependentUpon>xFrmFirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmHakkimizda.resx">
+      <DependentUpon>xFrmHakkimizda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmHizliStokGirisi.resx">
+      <DependentUpon>xFrmHizliStokGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmKategori.resx">
+      <DependentUpon>xFrmKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmSettings.resx">
+      <DependentUpon>xFrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmStok.resx">
+      <DependentUpon>xFrmStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmStokDegisiklik.resx">
+      <DependentUpon>xFrmStokDegisiklik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmStokKarDegisiklik.resx">
+      <DependentUpon>xFrmStokKarDegisiklik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmTeklif.resx">
+      <DependentUpon>xFrmTeklif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmTeklifDetay.resx">
+      <DependentUpon>xFrmTeklifDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmTeklifDetayDegisiklik.resx">
+      <DependentUpon>xFrmTeklifDetayDegisiklik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmTrial.resx">
+      <DependentUpon>xFrmTrial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmUrun.resx">
+      <DependentUpon>xFrmUrun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmUrunKatalog.resx">
+      <DependentUpon>xFrmUrunKatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmMessageBox.resx">
+      <DependentUpon>xFrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmUrunRapor.resx">
+      <DependentUpon>xFrmUrunRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmUrunYeni.resx">
+      <DependentUpon>xFrmUrunYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xFrmValidate.resx">
+      <DependentUpon>xFrmValidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Doviz.datasource" />
+    <None Include="Properties\DataSources\Fatura.datasource" />
+    <None Include="Properties\DataSources\Firma.datasource" />
+    <None Include="Properties\DataSources\Kategori.datasource" />
+    <None Include="Properties\DataSources\Stok.datasource" />
+    <None Include="Properties\DataSources\Teklif.datasource" />
+    <None Include="Properties\DataSources\TeklifDetay.datasource" />
+    <None Include="Properties\DataSources\Urun.datasource" />
+    <None Include="Properties\DataSources\UrunKatalog.datasource" />
+    <None Include="Properties\DataSources\UrunKatalog1.datasource" />
+    <None Include="Properties\DataSources\UrunListe.datasource" />
+    <None Include="Properties\DataSources\UrunRapor.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="applicationLogo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\companyLogo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\EasySupplyDatabase.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\faturaHeader.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\formHeader.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\excellExport16x.png" />
+    <None Include="Resources\accesBackup48x.png" />
+    <None Include="Resources\accessRepair48x.png" />
+    <None Include="Resources\applicationIcon.png" />
+    <None Include="Resources\question16x.png" />
+    <None Include="Resources\word16x.png" />
+    <None Include="Resources\pdf16x.png" />
+    <None Include="Resources\excelXlsx16x.png" />
+    <None Include="Resources\excelXls16x.png" />
+    <None Include="Resources\timer16x.png" />
+    <None Include="Resources\catalogID16x1.png" />
+    <None Include="Resources\info16x1.png" />
+    <None Include="Resources\money48x.png" />
+    <None Include="Resources\bussines48x.png" />
+    <None Include="Resources\category48x.png" />
+    <None Include="Resources\offer48x2.png" />
+    <None Include="Resources\productentry48x.png" />
+    <None Include="Resources\store48x.png" />
+    <None Include="Resources\cash48x.png" />
+    <None Include="Resources\basket48x.png" />
+    <None Include="Resources\delivery48x.png" />
+    <None Include="Resources\offer48x.png" />
+    <None Include="Resources\factura48x1.png" />
+    <None Include="Resources\offerArchive48x.png" />
+    <None Include="Resources\new48x.png" />
+    <None Include="Resources\product48x.png" />
+    <None Include="Resources\catalogID48x.png" />
+    <None Include="Resources\catalog48x.png" />
+    <None Include="Resources\pdf48x.png" />
+    <None Include="Resources\word48x.png" />
+    <None Include="Resources\excelXls48x.png" />
+    <None Include="Resources\excelXlsx48x.png" />
+    <None Include="Resources\settings48x.png" />
+    <None Include="Resources\excellExport48x.png" />
+    <None Include="Resources\excelImport48x.png" />
+    <None Include="Resources\undo48x.png" />
+    <None Include="Resources\save48x.png" />
+    <None Include="Resources\refresh48x1.png" />
+    <None Include="Resources\question_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="JRO">
+      <Guid>{AC3B8B4C-B6CA-11D1-9F31-00C04FC29D52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="BAYMYO.MultiSQLClient">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="BAYMYO.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.BonusSkins.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Charts.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.CodeParser.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Design.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.OfficeSkins.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Reports.v11.1.Designer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v11.1.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v11.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v11.1.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v11.1.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v11.1.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v11.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v11.1.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v11.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v11.1.Printing">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v11.1.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="EnvDTE">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="EnvDTE80">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Files\companyLogo.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Files\faturaHeader.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Files\formHeader.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="invoice_24.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="msado28.tlb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="msjro.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

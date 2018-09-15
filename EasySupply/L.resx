@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Acenta" xml:space="preserve">
+    <value>Acenta</value>
+  </data>
+  <data name="AlisFiyati" xml:space="preserve">
+    <value>B. Fiyatı</value>
+  </data>
+  <data name="AlisTutar" xml:space="preserve">
+    <value>B.Fiyat Tutar</value>
+  </data>
+  <data name="BaglamaLimani" xml:space="preserve">
+    <value>Bağlama Limanı</value>
+  </data>
+  <data name="Birim" xml:space="preserve">
+    <value>Birim</value>
+  </data>
+  <data name="Detaylar" xml:space="preserve">
+    <value>Detaylar</value>
+  </data>
+  <data name="Firma" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="GemiAdi" xml:space="preserve">
+    <value>Gemi İsmi</value>
+  </data>
+  <data name="Hazirlayan" xml:space="preserve">
+    <value>Hazırlayan</value>
+  </data>
+  <data name="KarOrani" xml:space="preserve">
+    <value>Kar %</value>
+  </data>
+  <data name="KDV" xml:space="preserve">
+    <value>K.D.V.</value>
+  </data>
+  <data name="Miktar" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="Musteri" xml:space="preserve">
+    <value>Müşteri Bilgileri</value>
+  </data>
+  <data name="NetKar" xml:space="preserve">
+    <value>Net Kâr</value>
+  </data>
+  <data name="Not" xml:space="preserve">
+    <value>Not</value>
+  </data>
+  <data name="OdemeYolu" xml:space="preserve">
+    <value>Ödeme Yolu</value>
+  </data>
+  <data name="ParaBirimi" xml:space="preserve">
+    <value>Para Birimi</value>
+  </data>
+  <data name="ReferNoUyari" xml:space="preserve">
+    <value>Referans numarasına göre ilgili teklifi getirir.</value>
+  </data>
+  <data name="SatisFiyati" xml:space="preserve">
+    <value>S. Fiyatı</value>
+  </data>
+  <data name="SatisTutar" xml:space="preserve">
+    <value>S.Fiyat Tutar</value>
+  </data>
+  <data name="SepeteUrunEkle" xml:space="preserve">
+    <value>Sepete Ürün Ekleyin</value>
+  </data>
+  <data name="Tarih" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="TedarikciFirma" xml:space="preserve">
+    <value>Tedarikçi Firma</value>
+  </data>
+  <data name="TeklifDurumuBelirleyin" xml:space="preserve">
+    <value>Teklif Durumunu Değiştirin</value>
+  </data>
+  <data name="Telefon" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="TeslimatSarti" xml:space="preserve">
+    <value>Teslimat</value>
+  </data>
+  <data name="UrunAciklama" xml:space="preserve">
+    <value>Ürün Açıklaması</value>
+  </data>
+  <data name="KurKaydedilen" xml:space="preserve">
+    <value>Kaydedilen Kur Bilgisi</value>
+  </data>
+  <data name="KurYeni" xml:space="preserve">
+    <value>Doviz Kurunu Güncelle</value>
+  </data>
+  <data name="Fatura" xml:space="preserve">
+    <value>FATURA</value>
+  </data>
+  <data name="Kategori" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="GuncellemeTarihi" xml:space="preserve">
+    <value>Güncelleme Tarihi</value>
+  </data>
+  <data name="IceriAktar" xml:space="preserve">
+    <value>İçeri Aktar</value>
+  </data>
+  <data name="Suz" xml:space="preserve">
+    <value>Süz</value>
+  </data>
+  <data name="Temizle" xml:space="preserve">
+    <value>Temizle</value>
+  </data>
+  <data name="EklenmeTarihi" xml:space="preserve">
+    <value>Eklenme Tarihi</value>
+  </data>
+  <data name="Adi" xml:space="preserve">
+    <value>Adı</value>
+  </data>
+  <data name="Adres" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Kod" xml:space="preserve">
+    <value>Kod</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Yetkili" xml:space="preserve">
+    <value>Yetkili Personel</value>
+  </data>
+  <data name="Tamam" xml:space="preserve">
+    <value>TAMAM</value>
+  </data>
+  <data name="Vazgec" xml:space="preserve">
+    <value>VAZGEÇ</value>
+  </data>
+  <data name="DisariAktar" xml:space="preserve">
+    <value>Dışarı Aktar</value>
+  </data>
+  <data name="YeniDosyaAdi" xml:space="preserve">
+    <value>Yeni Dosya Adı</value>
+  </data>
+  <data name="YeniKategori" xml:space="preserve">
+    <value>Yeni Kategori</value>
+  </data>
+  <data name="YeniTedarikciFirma" xml:space="preserve">
+    <value>Yeni Tedarikçi Firma</value>
+  </data>
+  <data name="YeniUrun" xml:space="preserve">
+    <value>Yeni Ürün</value>
+  </data>
+  <data name="Durum" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="KabulEdiyorum" xml:space="preserve">
+    <value>Kabul ediyorum!</value>
+  </data>
+  <data name="KabulEtmek" xml:space="preserve">
+    <value>Kabul etmek için tıklayın!</value>
+  </data>
+  <data name="AyarlariAgdanAl" xml:space="preserve">
+    <value>Ayarları Ağ'dan Al</value>
+  </data>
+  <data name="AyarlariKaydet" xml:space="preserve">
+    <value>Ayarları Kaydet</value>
+  </data>
+  <data name="TeslimVermeTutanagi" xml:space="preserve">
+    <value>Malzeme Teslim Tutanağı</value>
+  </data>
+  <data name="OnemliUyari" xml:space="preserve">
+    <value>Bu bölümde yapılacak değişiklikler önem arz etmektedir!</value>
+  </data>
+  <data name="SiparisMaliyetListesi" xml:space="preserve">
+    <value>Sipariş Maliyet Listesi</value>
+  </data>
+  <data name="SiparisToplamaListesi" xml:space="preserve">
+    <value>Sipariş Toplama Listesi</value>
+  </data>
+  <data name="TasimaUcreti" xml:space="preserve">
+    <value>Taşıma Ücreti</value>
+  </data>
+  <data name="TeklifVermeTutanagi" xml:space="preserve">
+    <value>Teklif Verme Tutanağı</value>
+  </data>
+  <data name="VeritabaniAgdanSec" xml:space="preserve">
+    <value>Ağ'daki Veritabanı</value>
+  </data>
+  <data name="VeritabaniDosyaYolu" xml:space="preserve">
+    <value>Veritabanı Dosya Yolu</value>
+  </data>
+  <data name="VeritabaniGeriAl" xml:space="preserve">
+    <value>Veritabanı Geri Al</value>
+  </data>
+  <data name="VeritabaniOlustur" xml:space="preserve">
+    <value>Yeni Veritabanı Oluştur</value>
+  </data>
+  <data name="VeritabaniOnar" xml:space="preserve">
+    <value>Veritabanı Onar</value>
+  </data>
+  <data name="VeritabaniYedekle" xml:space="preserve">
+    <value>Veritabanı Yedekle</value>
+  </data>
+  <data name="TumKategorilereUygula" xml:space="preserve">
+    <value>Tüm Kategorilere Uygula</value>
+  </data>
+  <data name="AlgilananDegisiklikler" xml:space="preserve">
+    <value>Algılanan değişiklikler renklendirilmiştir üzerinde değişiklik yaparak kaydedebilirsiniz.</value>
+  </data>
+  <data name="DigerFirmadanTeklifAktarim" xml:space="preserve">
+    <value>Diğer firmalardan alınan teklife göre içeri aktarılacak ürünler aşağıdaki gibidir!</value>
+  </data>
+  <data name="FirmaninFiyatListesi" xml:space="preserve">
+    <value>{0} tedarikci firmanin fiyat listesi.</value>
+  </data>
+  <data name="KarOraniBelirle" xml:space="preserve">
+    <value>Uyarı: Lütfen excel aktarım işlemlerini yapmadan önce 'Kâr Oranı' belirleyiniz!</value>
+  </data>
+  <data name="MusteriDegisikligiAktarim" xml:space="preserve">
+    <value>Müşteri tarafından miktar üzerinde yapılan değişiklikler aşağıdaki gibidir!</value>
+  </data>
+  <data name="UrunlerGuncellendi" xml:space="preserve">
+    <value>Ürünler başarılı bir şekilde güncellendi.</value>
+  </data>
+  <data name="DegisiklikAlgila" xml:space="preserve">
+    <value>Değişiklikleri Algıla!</value>
+  </data>
+  <data name="ExcelDekiUrunAktarildi" xml:space="preserve">
+    <value>Bilgi : Excel'deki '{0}' ürün başarılı bir şekilde aktarıldı!</value>
+  </data>
+  <data name="TeklifleriBirlestir" xml:space="preserve">
+    <value>Teklifleri Birleştir!</value>
+  </data>
+  <data name="Kaydet" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="StokGirisi" xml:space="preserve">
+    <value>Stok Girişi</value>
+  </data>
+  <data name="Adet" xml:space="preserve">
+    <value>Adet</value>
+  </data>
+  <data name="SiraNo" xml:space="preserve">
+    <value>Sıra No</value>
+  </data>
+  <data name="UrunleriFlitrele" xml:space="preserve">
+    <value>Products Filter</value>
+  </data>
+  <data name="IDAktarimi" xml:space="preserve">
+    <value>ID ile Aktar!</value>
+  </data>
+  <data name="IDileAktarimMesaji" xml:space="preserve">
+    <value>Belirlenen ID'lere göre bulunan ürünler aşağıdaki gibidir!</value>
+  </data>
+  <data name="BasliktaResimKullaniliyor" xml:space="preserve">
+    <value>Form başlığında resim kullanılıyor!</value>
+  </data>
+  <data name="BasliktaResimKullanin" xml:space="preserve">
+    <value>Form başlığında resim kullanmak için tıklayın!</value>
+  </data>
+  <data name="YeniKayit" xml:space="preserve">
+    <value>Yeni Kayıt</value>
+  </data>
+  <data name="UrunStokdaVarSilinmez" xml:space="preserve">
+    <value>{0} isimli ürün stok kayıtlarında var bu sebebden dolayı silemezsiniz.</value>
+  </data>
+  <data name="ArsivdekiBilgileriSuz" xml:space="preserve">
+    <value>Arşivdeki Bilgileri Süz</value>
+  </data>
+  <data name="TarihIlk" xml:space="preserve">
+    <value>İlk Tarih</value>
+  </data>
+  <data name="TarihSon" xml:space="preserve">
+    <value>Son Tarih</value>
+  </data>
+  <data name="Teklif_BEKLIYOR" xml:space="preserve">
+    <value>BEKLİYOR</value>
+  </data>
+  <data name="Teklif_IPTAL" xml:space="preserve">
+    <value>İPTAL</value>
+  </data>
+  <data name="Teklif_ONAYLANDI" xml:space="preserve">
+    <value>ONAYLANDI</value>
+  </data>
+  <data name="BosGecilemez" xml:space="preserve">
+    <value>Boş geçilemez..</value>
+  </data>
+  <data name="KategoridekiUrunListesi" xml:space="preserve">
+    <value>{0} kategori içerisindeki ürünlerin listesi.</value>
+  </data>
+  <data name="KategoriUrunlerEklendi" xml:space="preserve">
+    <value>{0} kategorisine ürünler başarılı bir şekilde eklendi.</value>
+  </data>
+  <data name="DovizKuruBelirtilmis" xml:space="preserve">
+    <value>Burada belirttiğiniz doviz kuru diğer para birimi alanlarındaki ile aynı olmamalıdır!</value>
+  </data>
+  <data name="YeniUrunKategoriBazinda" xml:space="preserve">
+    <value>Kategoriye Yeni Ürün Ekle</value>
+  </data>
+  <data name="ExcelAktarimDosyasiMesaji" xml:space="preserve">
+    <value>Excel dosyasını geri alma işlemi başarılı bir şekilde gerçekleşti!</value>
+  </data>
+  <data name="VeritabaniYedeklemeIslemi" xml:space="preserve">
+    <value>Veritabanı yedekleme işlemi başarılı bir şekilde gerçekleşti!</value>
+  </data>
+  <data name="VeritabaniGeriAlmaIslemi" xml:space="preserve">
+    <value>Veritabanı yedekden geri alma işlemi başarılı bir şekilde gerçekleşti!</value>
+  </data>
+  <data name="VeritabaniOnarmaIslemi" xml:space="preserve">
+    <value>Veritabanı onarma işlemi başarılı bir şekilde gerçekleşti!</value>
+  </data>
+  <data name="AktarilacakExcelDosyasi" xml:space="preserve">
+    <value>Aktarılacak Excel Dosyası</value>
+  </data>
+  <data name="VeritabaniOlusturmaIslemi" xml:space="preserve">
+    <value>Yeni veritabanı oluşturuldu.</value>
+  </data>
+  <data name="MailGecersiz" xml:space="preserve">
+    <value>Belirtiğiniz mail adresi geçersizdir.</value>
+  </data>
+  <data name="FullLisansTalebi" xml:space="preserve">
+    <value>Talebiniz tarafımıza ulaştı iletişim bilgileriniz üzerinden sizinle irtibata geçilecektir.</value>
+  </data>
+  <data name="FullLisansTalebiHata" xml:space="preserve">
+    <value>Taleb mailinizi gönderme esnasında bir hata oluştu lütfen internet bağlatınızı kontrol ediniz.</value>
+  </data>
+  <data name="LisansDosyasiSec" xml:space="preserve">
+    <value>Lütfen yüklemek istediğiniz lisans dosyasını seçiniz!</value>
+  </data>
+  <data name="LisansGecersiz" xml:space="preserve">
+    <value>Belirtiğiniz lisans dosyası geçersiz lütfen bizimle irtibata geçerek yeni lisans dosyası talep ediniz.</value>
+  </data>
+  <data name="VeritabaniGerialIslemiSifre" xml:space="preserve">
+    <value>Veriabanını yedekten geri alma işlemi için güvenlik kodunu girmeniz gerekmektedir.</value>
+  </data>
+  <data name="VeritabaniGerialIslemiUyari" xml:space="preserve">
+    <value>Bu işlem sırasında verileriniz en son yedekleme anına dönecektir. Kabul ediyor musunuz?</value>
+  </data>
+  <data name="TasimaHizmetBedeli" xml:space="preserve">
+    <value>DELIVERY EXPENSES / TAŞIMA ÜCRETİ</value>
+  </data>
+  <data name="DestekHatti" xml:space="preserve">
+    <value>Destek Hattı</value>
+  </data>
+  <data name="Gonder" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="HataBildirimiYap" xml:space="preserve">
+    <value>Hatayı göndermek için tıklayın!</value>
+  </data>
+  <data name="Konu" xml:space="preserve">
+    <value>Konu</value>
+  </data>
+  <data name="MesajDetaylari" xml:space="preserve">
+    <value>Mesaj Detayları</value>
+  </data>
+  <data name="DestekBildirimBasarisiz" xml:space="preserve">
+    <value>Destek Hattına mesaj iletilemedi lütfen tekrar deneyiniz!</value>
+  </data>
+  <data name="DestekBildirimIletildi" xml:space="preserve">
+    <value>Destek Hattına mesaj başarılı bir şekilde gönderildi!</value>
+  </data>
+  <data name="DestekBildirimKonusu" xml:space="preserve">
+    <value>Aşağıdaki konu ile ilgili yardımınızı rica ediyorum!</value>
+  </data>
+  <data name="FirmaninStoklariVarSilinemez" xml:space="preserve">
+    <value>{0} isimli firma stok kayıtlarında var bu sebebden dolayı silemezsiniz.</value>
+  </data>
+  <data name="AktarimDosyasi" xml:space="preserve">
+    <value>Aktarım Dosyası</value>
+  </data>
+  <data name="DovizKurlari" xml:space="preserve">
+    <value>Doviz Kurları</value>
+  </data>
+  <data name="EnUcuzUrunListesi" xml:space="preserve">
+    <value>En Ucuz Ürünlerin Listesi</value>
+  </data>
+  <data name="FaturaHazirla" xml:space="preserve">
+    <value>Fatura Hazırla</value>
+  </data>
+  <data name="FirmaTanimla" xml:space="preserve">
+    <value>Firma Tanımla</value>
+  </data>
+  <data name="FormuYenile" xml:space="preserve">
+    <value>Formu Yenile</value>
+  </data>
+  <data name="HizliStokGirisi" xml:space="preserve">
+    <value>Hızlı Stok Girişi</value>
+  </data>
+  <data name="KategoriTanimla" xml:space="preserve">
+    <value>Kategori Tanımla</value>
+  </data>
+  <data name="SepetiGeriAl" xml:space="preserve">
+    <value>Sepeti Geri Al</value>
+  </data>
+  <data name="StokTanimla" xml:space="preserve">
+    <value>Ürün Stok Tanımlama</value>
+  </data>
+  <data name="TeklifArsivi" xml:space="preserve">
+    <value>Teklif Arşivi</value>
+  </data>
+  <data name="TeklifKaydet" xml:space="preserve">
+    <value>Teklif Kaydet</value>
+  </data>
+  <data name="TumUrunListesi" xml:space="preserve">
+    <value>Tüm Ürünlerin Listesi</value>
+  </data>
+  <data name="UrunFiyatKarislastirma" xml:space="preserve">
+    <value>Ürün Fiyatı Karşılatırma</value>
+  </data>
+  <data name="UygulamAyarlari" xml:space="preserve">
+    <value>Uygulama Ayarları</value>
+  </data>
+  <data name="YeniLisansSatinAl" xml:space="preserve">
+    <value>Yeni Lisans Satın Al</value>
+  </data>
+  <data name="YeniTeklifHazirla" xml:space="preserve">
+    <value>Yeni Teklif Hazırla</value>
+  </data>
+  <data name="YeniUrunTanimla" xml:space="preserve">
+    <value>Yeni Ürün Tanımla</value>
+  </data>
+  <data name="Bilinmeyen" xml:space="preserve">
+    <value>Bilinmeyen!</value>
+  </data>
+  <data name="KarOraniDegistir" xml:space="preserve">
+    <value>Yeni Kâr Orani Belirleme</value>
+  </data>
+  <data name="Guncelle" xml:space="preserve">
+    <value>Güncelle</value>
+  </data>
+  <data name="KarOraniYeni" xml:space="preserve">
+    <value>Yeni Kâr Oranı % (0,00)</value>
+  </data>
+  <data name="KarOraniSecilenDisindakilereUygula" xml:space="preserve">
+    <value>Seçilen Kategori ve/veya Firma Dışındakilere Uygula</value>
+  </data>
+  <data name="KarOraniSecileneUygula" xml:space="preserve">
+    <value>Seçilen Kategoriye ve/veya Firmaya Uygula</value>
+  </data>
+  <data name="KarOraniTumuneUygula" xml:space="preserve">
+    <value>Filitresiz Tümüne Uyugula</value>
+  </data>
+  <data name="KarOraniFirmaDisindakilere" xml:space="preserve">
+    <value>Seçilen Firma Dışındakilere Uygula</value>
+  </data>
+  <data name="KarOraniKategoriDisindakilere" xml:space="preserve">
+    <value>Seçilen Kategori Dışındakilere Uygula</value>
+  </data>
+  <data name="TumFirmalaraUygula" xml:space="preserve">
+    <value>Tüm Firmalara Uygula</value>
+  </data>
+</root>

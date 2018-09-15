@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="toolTipItem1.Text" xml:space="preserve">
+    <value>Stok girişi yapabilmek için ürün tanıtımları yapılması gereklidir.
+
+Bu formda kategorisi belirli olan ürünlerin girişi yapılabilir.
+
+&lt;u&gt;&lt;b&gt;ÖNEMLİ!&lt;/b&gt;&lt;/u&gt;
+Ürünler girilirken &lt;b&gt;K.D.V.&lt;/b&gt; oranlarını doğru girmeniz gerekmektedir aksi durumda fatura çıktınız yanlış hesaplanır.</value>
+  </data>
+  <data name="toolTipItem3.Text" xml:space="preserve">
+    <value>Stok ve Ürün Tanımlama girişlerini yapabilmek için ürün kategorisi gereklidir.
+
+Bu form üzerinde düzenli bir şekilde kategorilerinizi oluşturmanız önemlidir çünkü ürün kataloğu gibi tüm her yerde kullanılmaktadır.</value>
+  </data>
+  <data name="toolTipItem4.Text" xml:space="preserve">
+    <value>Güncel Doviz kurlarını belirlediğiniz formu açar.
+
+Bu kurlar teklif hazırlama işleminde teklif içerisinde ayrı olarak kaydedilir.
+
+Lütfen teklif hazırlamadan önce kurlarnızın güncelliğini kontrol ediniz?</value>
+  </data>
+  <data name="toolTipItem5.Text" xml:space="preserve">
+    <value>Firma bazında ürünlerin karşılaştırıldığı çizelgedir. 
+
+Bu ekranda net bir şekilde hangi firmadan neyi, nekadara aldığınızı karşılaştırmalı olarak görebilirsiniz.
+
+Bu ekran uygulamanın açılış ekranıdır!</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="teklifVermeButton.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="toolTipItem15.Text" xml:space="preserve">
+    <value>Oluşan teklif üzerindeki maliyetinizi &lt;b&gt;Firma&lt;/b&gt; bazında görebileceğiniz belgeyi oluşturur.
+
+Bu belgeyi &lt;b&gt;Firma&lt;/b&gt; bazında ayrı, ayrı alabilmek için ekrana bir soru çıkar.
+
+Bu işlem sadece ekranda aktif olan teklif üzerinde gerçekleşir.</value>
+  </data>
+  <data name="toolTipItem16.Text" xml:space="preserve">
+    <value>Ürünlerin toparlanması için elemana verilecek olan belgeyi verir.
+
+Bu belgeyi &lt;b&gt;Firma&lt;/b&gt; bazında ayrı, ayrı alabilmek için ekrana bir soru çıkar.
+
+Bu işlem sadece ekranda aktif olan teklif üzerinde gerçekleşir.</value>
+  </data>
+  <data name="formuYenileButton.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK+gAA
+        CvoBGdj/dAAABDNJREFUaEPtWFtrE0EY9X8IIgiiCCIIogiCCIIIviiCCIL0SXwSxCdRBPFJBUEEUYRq
+        vVSr9VKtFbUo1dJaqZdqLVZr07Rpk15ybdo06Zgz2c9ONt9sdpNNYiEHDpT5prNzZr7bZMnSWo9YzKwK
+        qDSrAorle9+MMEO1eyJzxugCVPt/I6BnIiH/Bsm2+rZX2iCCbKoddEXA/pd+sen+CGvLR2wI2NMylmPD
+        GHCycyrHRnRFwIaGYeGLJcXWhz7WbkUSgE1iw6qQc5+C0lbfH5X2jcwhueZCvZMJMTWTEjufjrJ2HUmA
+        Cp0tNJsS259kH5JrAi71hOVH4sl5ceqD/srNpE3ilHHiINmufA+LZs+0qHkdkHYA89X/L1rA8htDYkfT
+        qKj9EZEfIHT5Z3NOiyMJ4GJAJQU0oI47ErCibkjUtAbE1fTJtHrjYpBJcWY0/o5Jgdx6oE7AkbYJeRt0
+        CPB/AG6kzrMlABkGVxidm5eLFIL20RnpWgh4dW0rAQA2DCFIswDcSp2XV8CZj0GRSBW+cUJfMCHOfw7l
+        uJWVC2GzKhAPcCV1jqUAuEqxeDMSF3tb/Oz6dogNQxyXQkGtgIPpyLeDgfCcdK/mwWljJANvNCkLHLe2
+        m9QKaPPFja3kAi6F21H9+eLXkGEV4lpvRKy8OZS1XqmoFaAL2HA6qHY9y80qVMjyuQsyGQK0ri8ijr6b
+        EGvuZPu0U2oFoCBxON4xmTMXNwGX2fzAfj+EYO4OzAp8Bu5np2Zw1AqgtGUGd2K7n4+J9fey06Md4jZa
+        0pmF0PQn5ngdrYALXxZ8mgD34eYWw2XXPdKdCPjG4bfj7FyOWgEoXub8j+vGqXHzi+WjgZjxlQwuf8su
+        WDpqBYBqZiEceBVg5xZLHAxSsoqGX1F5Q9x8oqUANGrmWEBvw811g4glM9DlcnOJlgLALY0jYjyeMpbL
+        uBHGuLlusGMs01qoOPRGHxN5BYDoJhFcBLQH3Dw3iNpgBurLKlMPRLQlAIQI/3TSWFI4erQ44bbHPuML
+        2TjdxX/PtgBw3d3hrCt2ku44cjVFJwDfNc8FHQkAkRVw+mg1EA9o+rh5+YiKzv0IgHEOuhrkWAARt4EM
+        gV8juPbCirg51BhkOXV8bb1XrscBiUSdSyxYABGbQG2w2zrjSYrNo/lTx9EL9Yf0T1Q8YdX5xKIFOOGx
+        9knpdgDqCU4cKdL8luCw7wV/QGURgLfBrZ+Zn0UISI12gbcHty5YcgFwLSvXyAc0ldy6xJIJwC908NtC
+        gbeC1c8xRNcFoGKaO0u7QKFEA8e9+HQs2Q3glYagRYCqbYgKxAHsJzqnCu6vyhLEaJVR/MyB60ZTWBYB
+        RGSjs93Bfzdi99FixbIKIOLdi58a4fP5Hiz5WBEBIDaO20Bl5ux2WTEBRFRjbtwuKy6gWFYFVJpVAZXm
+        IhfgEX8BcRmq2eUGA3QAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolTipItem19.Text" xml:space="preserve">
+    <value>Stoklarımızdaki &lt;b&gt;En Ucuz&lt;/b&gt; ürünlerin listesini veren raporu açar. Bu raporu tüm dosya formatlarına çevirerek yada çıktısını alarak kullanabiliriz.
+
+Bu ekran açılırken soru çıkacaktır buradaki amaç açılan raporda "&lt;b&gt;Sıra No&lt;/b&gt; yada &lt;b&gt;Stok ID&lt;/b&gt; alanları arasındaki gösterim seçeneğidir.</value>
+  </data>
+  <data name="toolTipItem20.Text" xml:space="preserve">
+    <value>Stoklarımızdaki &lt;b&gt;Tüm&lt;/b&gt; ürünlerin listesini veren raporu açar. Bu raporu tüm dosya formatlarına çevirerek yada çıktısını alarak kullanabiliriz.
+
+Bu ekran açılırken soru çıkacaktır buradaki amaç açılan raporda "&lt;b&gt;Sıra No&lt;/b&gt; yada &lt;b&gt;Stok ID&lt;/b&gt; alanları arasındaki gösterim seçeneğidir.</value>
+  </data>
+  <data name="enUcuzUrunIDButton.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK+gAA
+        CvoBGdj/dAAAAGpJREFUOE9j+KBe858STD0DPho2/f8x5/D/H9MP/P+o34ihEBeGG/BzyYn/+ACyJmSM
+        MGD1GahS7ABZEzJGeMGs9f+PmQf//5iyD+wdZEX4MP3CABlgN4BAGCADrAaMhgEVwoBcTKEBNf8BwPLt
+        RV2kBigAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolTipItem22.Text" xml:space="preserve">
+    <value>Stoklarımızdaki &lt;b&gt;ID'li En Ucuz Ürünlerin&lt;/b&gt; listesini veren raporu açar. Bu raporu tüm dosya formatlarına çevirerek yada çıktısını alarak kullanabiliriz.
+
+&lt;b&gt;İpucu!&lt;/b&gt;
+Bu listeyi excel olarak müşterilere gönderirseniz daha hızlı teklif hazırlayabilirsiniz.</value>
+  </data>
+  <data name="tumUrunlerIDButton.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK+gAA
+        CvoBGdj/dAAAAGpJREFUOE9j+KBe858STD0DPho2/f8x5/D/H9MP/P+o34ihEBeGG/BzyYn/+ACyJmSM
+        MGD1GahS7ABZEzJGeMGs9f+PmQf//5iyD+wdZEX4MP3CABlgN4BAGCADrAaMhgEVwoBcTKEBNf8BwPLt
+        RV2kBigAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolTipItem23.Text" xml:space="preserve">
+    <value>Stoklarımızdaki &lt;b&gt;ID'li Tüm Ürünlerin&lt;/b&gt; listesini veren raporu açar. Bu raporu tüm dosya formatlarına çevirerek yada çıktısını alarak kullanabiliriz.
+
+&lt;b&gt;İpucu!&lt;/b&gt;
+Bu listeyi excel olarak müşterilere gönderirseniz daha hızlı teklif hazırlayabilirsiniz.</value>
+  </data>
+  <data name="toolTipItem24.Text" xml:space="preserve">
+    <value>Sepet içerisinde sadece birden fazla satır seçilerek yapılan silme işlemleri sırasında hatalı sildiğiniz kayıtları geri alma işleminde kullanılır. 
+
+Arka, arkaya yapılan "&lt;b&gt;Çoklu Satır&lt;/b&gt;" silme işleminde en son yaptığınız işlem geriye alınır!</value>
+  </data>
+  <data name="toolTipItem25.Text" xml:space="preserve">
+    <value>Sistem tarafından oluşturulan "&lt;b&gt;EXCEL AKTARIM&lt;/b&gt;" dosyamız içerisindeki ilgili alanlar doldurulur ve aktarma seçiminize göre işlem gerçekleştirilir!
+
+&lt;b&gt;Nedir Bu Aktarım Seçenekleri?&lt;/b&gt;
+&lt;b&gt;1: Teklifleri Birleştir!&lt;/b&gt;
+Bu dosya ile dışarıdan talep ettiğiniz fiyat teklifiniz sisteme aktarma işlemi gerçekleştirilir. Zorunlu alanlar aktarım dosyası içerisindeki kırmızı alanlardır. Bu seçenekte aktarım yapılırken "&lt;b&gt;Kâr ve Para Birimi&lt;/b&gt;" seçmek zorunludur.
+
+&lt;b&gt;2: Stok ID ile Aktar!&lt;/b&gt;
+Ürünlerin "&lt;b&gt;ID&lt;/b&gt;'leri" ile aktarım yapmanıza olanak verir. En pratik kullanım şekli &lt;b&gt;ID'li Ürün Kataloğu&lt;/b&gt; ile yapılır.
+
+&lt;b&gt;3: Değişiklikleri Algıla!&lt;/b&gt;
+Bu sadece başlığı ile eşleşen kayıtların adetlerini günceller. Müşteriye excel ile giden teklif üzerindeki değişen adet alanlarını en pratik şekilde aktarmak için gereklidir. Bu işlemde adet alanı müşteri tarafından "0" girilirse ürün silinmesi ile ilgili soru ekrana yansır.</value>
+  </data>
+  <data name="faturaHazirlaButton.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="abutUsButton.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK+gAA
+        CvoBGdj/dAAAAP5JREFUOE9jkCs6+Z8STHsDkufe+v/q06//K068wipP0IBdV979B4H3X39jlSdoQMCk
+        q2Dbo2fcwCqP14DcJXf+Lzr68n/2ottY5UEYqwGGdWf/b7349v/zDz/Bzn/zGbvzQRirAbMOPP9v1nge
+        bsChmx8w1MAwVgMUS079T5h9E6wZBIqX38VQA8M4w2Dvtfdgzd9//f2vWXkGqxoQxmqAcf25/3/+/gMb
+        sPbMa7CYcukpDHUgjNWAhvUPwZpBAOSVCTuf/Ldru4ihDoSxGrDp/Fuo9v//j97++D91/i0MNTCM0wVX
+        n3z9v/T4y//WLRcw5JExzkAkFlNowMn/ACZris6mATZhAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="toolTipItem29.Text" xml:space="preserve">
+    <value>Tüm tedarikçilerden aldığınız ayrı, ayrı fiyat tekliflerinizin girişinin yapıldığı form.
+
+Bu formda sadece &lt;b&gt;Firması, Katagorisi ve Ürün&lt;/b&gt; Tanımlaması yapılan kayıtların girişi yapılabilir.
+
+Bir ürünü, bir firmaya iki defa giriş yapamazsınız ürün firma üzerinde tanımlıysa size uyarı verecektir ve sadece bilgilerini güncelleme işlemi yapacaktır.
+
+Bu form üzerinde tedarikçi firma bazında fiyat güncellemesi gelen ürünleri "&lt;b&gt;Kırmızı&lt;/b&gt;" ile işaretli görünür.
+
+&lt;b&gt;Kırmızı&lt;/b&gt; olarak görünen ürünlerin fiyatlarını güncellemek için fiyat hücresini değiştirebilir yada üzerinde çift tıklayarak gelen bilgileri değiştirebilirsiniz.
+
+Bu ekranda &lt;b&gt;K.D.V.&lt;/b&gt; bilgisi &lt;u&gt;&lt;b&gt;tanımlanmaz.&lt;/b&gt;&lt;/u&gt;</value>
+  </data>
+  <data name="toolTipItem30.Text" xml:space="preserve">
+    <value>Hızı düşen veritabanınızı tekrar eski hızına kazandırmak için kullanılır.
+
+Lütfen arka, arkaya bu işlemi gerçekleştirmeyiniz veritabanınız zarar görebilir.
+
+Bu işlem sırasında zarar veritabanınız zarar görmüş ise "&lt;b&gt;Belgelerim&lt;/b&gt;" içerisinde "&lt;b&gt;TTF System&lt;/b&gt;" klasörü altında bulunan "&lt;b&gt;DB&lt;/b&gt;" klasörü içerisinde bulunan ay'lara göre kayıtlı "&lt;b&gt;RepariDatabase.mdb&lt;/b&gt;" isimli veritabanını geri dönebilirsiniz.</value>
+  </data>
+  <data name="toolTipItem33.Text" xml:space="preserve">
+    <value>Lisans dosyanız kısıtlı kullanım süresine düştüğünde bu buton karşınıza çıkar ve tekrar sürenizi uzatabilmenize imkan sağlar.
+
+Açılan ekranda satın al butonuna tıklayarak sürenizi tekrar uzatma talebinde bulunabilirsiniz.
+
+Yeni lisans dosyasını yüklediğinizde bu buton görünmez.</value>
+  </data>
+  <data name="toolTipItem34.Text" xml:space="preserve">
+    <value>Program kullanımı esnasında karşılaştığınız hatalar ile ilgili bizden yardım almak istediğiniz konuları iletmeniz konusunda iletişim yoludur.
+
+Sadece hataları değil geliştirmemizi ve değiştirmemizi istediğiniz konularıda bize bu mesaj platformu üzerinden iletebilrisiniz.</value>
+  </data>
+  <metadata name="xtraTabbedMdiManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>5, 12</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>61</value>
+  </metadata>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAAAAAABMLAAATCwAAAAAAAAAA
+        AAAAxv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Bxv//OtP//4zl///I8///8Pz/////
+        ////////8Pz//8jz//+M5f//OtP//wHG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//0rX///P9P//////////
+        /////////////////////////////////////////////8/0//9K1///AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Nyf//p+v/////
+        ///////////////////k+f//se7//5jo//+Y6P//se7//+T5////////////////////////p+v//w3J
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//xjL
+        ///S9f/////////////8/v//nun//zHR//8Axv//AMb//wDG//8Axv//AMb//wDG//8x0f//nun///z+
+        /////////////9L1//8Yy///AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//Dcn//9L1/////////////9X2//8w0f//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//zDR///V9v/////////////S9f//Dcn//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//p+v/////////////vvD//w7J//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Oyf//vvD/////////////p+v//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//9K1//////////////V9v//Dsn//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//Dsn//9X2/////////////0rX
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wHG///P9P////////z+//8w0f//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//zDR
+        ///8/v///////8/0//8Bxv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//zrT/////////////57p
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//+e6f////////////860///AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//4zl
+        /////////////zHR//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8x0f////////////+M5f//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//8jz////////5Pn//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//5Pn////////I8///AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb///D8////////se7//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//hOT///D8///s+///V9n//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//se7/////
+        ///w/P//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb/////////////mOj//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//830v//////////////////7Pv//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//mOj/////////////AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb/////////////mOj//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//xXL///j+f//////////////////8Pz//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//m+n////////+////AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb///D8
+        ////////se7//wDG//8Axv//AMb//wDG//8Axv//A8f//77w////////////////////////hOT//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//su7////////s+///AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//8fy////////6vr//wLG//8Axv//AMb//wDG//8Axv//iOT//////////////////+X5
+        //840///AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//5vn////////F8v//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//4vl/////////////zbS//8Axv//AMb//wDG//9Q2P//////////
+        ////////wPH//xfL//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//820v//////////
+        //+K5f//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//zjT/////////////2ze//8Axv//AMb//yPO
+        ///x/P////////////+O5v//BMf//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //+g6v////////////810v//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//+b6f//uO///xrM
+        //8Axv//B8j//830////////9P3//1bZ//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//zPR///8/v///////870//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//kOb////////T9f//KM///wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//D8n//9f2/////////////0XV//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//9Q2P///////5zp//8JyP//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Qyv//w/L/////////////our//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//xjL///f+P//XNv//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//zbS///Z9//////////////Q9P//DMn//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//0rX//8fzf//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//V9n//+z7///s+///V9n//wDG//8Axv//dOD///3//////////////9D0
+        //8Vy///AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Bxv//7fv/////////////7fv//wHG//8Axv//7fv/////
+        ////////oer//wrI//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Bxv//7fv/////////////7fv//wHG
+        //8Axv//b9///7bv//9B1f//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//V9n//+z7
+        ///s+///V9n//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG
+        //8Axv//AMb//wDG//8Axv//AMb//wDG//8Axv//AMb//wDG//8AAAAAAAAgAAAAAAAAACAAAAAAAAAA
+        IAAAAAAAAABhAAAAAAAAAD0AAAAAAAAAIAAAAAAAAAAKAAAAAAAAACAAAAAAAAAAIAAAAAAAAAAgAAAA
+        AAAAACAAAAAAAAAAIQAAAAAAAABiAAAAAAAAACAAAAAAAAAAbAAAAAAAAAAtAAAAAAAAACAAAAAAAAAA
+        IAAAAAAAAAA8AAAAAAAAAHQAAAAAAAAAIAAAAAAAAABlAAAAAAAAAG4AAAAAAAAAZQAAAAAAAAB1AAAA
+        AAAAAGUAAAAAAAAAcgAAAAAAAABmAAAAAAAAACAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAAHYAAAAAAAAA
+        ZQAAAAAAAAAiAAAAAAAAAAoAAAAAAAAAIAAAAAAAAAAgAAAAAAAAAGEAAAAAAAAAZQAAAAAAAABtAAAA
+        AAAAAEUAAAAAAAAAbAAAAAAAAABvAAAAAAAAAGkAAAAAAAAAaQAAAAAAAABzAAAAAAAAACAAAAAAAAAA
+        IAA=
+</value>
+  </data>
+  <metadata name="defaultLookAndFeel1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>180, 12</value>
+  </metadata>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>335, 12</value>
+  </metadata>
+</root>

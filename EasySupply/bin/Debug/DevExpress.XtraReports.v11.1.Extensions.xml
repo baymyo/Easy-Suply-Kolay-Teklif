@@ -1,0 +1,3576 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraReports.v11.1.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager">
+
+            <summary>
+                <para>Represents the component containing standard docking panels in the End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignDockManager.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignDockManager class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignDockManager.DesignDockPanels">
+            <summary>
+                <para>Gets or sets an array of the design dock panels controlled by this design dock manager.
+
+</para>
+            </summary>
+            <value>An array of <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanel"/> objects which represent the dock panels of this manager.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignDockManager.Images">
+            <summary>
+                <para>Gets the image source whose images are used by dock panels.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Images"/> which provides images for dock panels.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignDockManager.ImageStream">
+            <summary>
+                <para>Gets or sets a stream which contains the images used to display <b>Design Dock Manager</b> items.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.ImageCollectionStreamer"/> object which represents the stream of images.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignDockManager.Initialize(DevExpress.XtraReports.UserDesigner.XRDesignPanel)">
+            <summary>
+                <para>Performs basic initialization of the created XRDesignDockManager object and assigns the specified Design Panel to it.
+
+</para>
+            </summary>
+            <param name="designPanel">
+		An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, which specifies the Design Panel to be assigned.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignDockManager.Item(DevExpress.XtraReports.UserDesigner.DesignDockPanelType)">
+            <summary>
+                <para>Gets the design dock panel specified by its type.
+
+</para>
+            </summary>
+            <param name="panelType">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value specifying the type of the required dock panel.
+
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanel"/> object which represents the dock panel of the specified type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignDockManager.SavedAutoHidePanels">
+            <summary>
+                <para>Provides access to a collection of auto-hide panels, saved prior to changing the visibility of the XRDesignDockManager instance.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Docking.DockPanelCollection"/> object, containing saved panels.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignDockManager.SavedVisiblePanels">
+            <summary>
+                <para>Provides access to a collection of visible panels, saved prior to changing the visibility of the XRDesignDockManager instance.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Docking.DockPanelCollection"/> object, containing saved panels.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignDockManager.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object associated with the XRDesignDockManager.
+</para>
+            </summary>
+            <value>The <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object assigned to the current XRDesignDockManager object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignBarManager">
+
+            <summary>
+                <para>Represents the component containing toolbars, status bar and menu elements in the End-User Designer.
+
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignBarManager class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.BarInfos">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.EndInit">
+            <summary>
+                <para>Notifies the control that initialization has been completed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.FontNameBox">
+            <summary>
+                <para>Gets or sets the pop-up box which is used to specify a font name.
+
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemComboBox"/> object which represents the pop-up box used to select a font name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.FontNameEdit">
+            <summary>
+                <para>Gets or sets the editor which is used to specify a font name.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.BarEditItem"/> object which represents the edtitor used to select a font name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.FontSizeBox">
+            <summary>
+                <para>Gets or sets the pop-up box which is used to specify a font size.
+
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemComboBox"/> object which represents the pop-up box used to select a font size.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.FontSizeEdit">
+            <summary>
+                <para>Gets or sets the editor which is used to specify a font size.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.BarEditItem"/> object which represents the edtitor used to select a font size.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.FormattingToolbar">
+            <summary>
+                <para>Gets or sets the <b>Formatting Toolbar</b> controlled by this bar manager.
+
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Bar"/> object which represents the <b>Formatting Toolbar</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.GetBarItemByCommand(System.ComponentModel.Design.CommandID)">
+            <summary>
+                <para>Gets a bar item within the bar manager by its command.
+
+</para>
+            </summary>
+            <param name="commandID">
+		A <see cref="T:System.ComponentModel.Design.CommandID"/> object which specifies the command to be executed by the bar item to find.
+
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraReports.UserDesigner.CommandBarItem"/> object that represents the bar item which executes the specified command.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.GetBarItemsByReportCommand(DevExpress.XtraReports.UserDesigner.ReportCommand)">
+            <summary>
+                <para>Gets an array of bar items within the bar manager by their report command.
+
+
+</para>
+            </summary>
+            <param name="command">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration value that specifies the command assigned to the bar items being sought.
+
+
+            </param>
+            <returns>An array of <see cref="T:DevExpress.XtraBars.BarItem"/> objects that represent the bar items which are associated with the specified report command.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.GetToolboxType(DevExpress.XtraBars.Bar)">
+            <summary>
+                <para>Gets the Toolbox type used by the XRDesignBarManager.
+</para>
+            </summary>
+            <param name="bar">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ToolboxType"/> enumeration value.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraBars.Bar"/> object, representing the Toolbox.
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.HintStaticItem">
+            <summary>
+                <para>Gets or sets the object which is used to show hints in the design bar manager.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.BarStaticItem"/> object which represents the static hint item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.Images">
+            <summary>
+                <para>Gets the source of images that can be displayed within items.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Images"/> object which provides images for bar items.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.ImageStream">
+            <summary>
+                <para>Gets or sets a stream which contains the images used to display <b>Design Bar Manager</b> items.
+
+
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.ImageCollectionStreamer"/> object which represents the stream of images.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.Initialize(DevExpress.XtraReports.UserDesigner.XRDesignPanel)">
+            <summary>
+                <para>Performs basic initialization of the created XRDesignBarManager object, and assigns the specified Design Panel to it.
+
+</para>
+            </summary>
+            <param name="designPanel">
+		An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object which specifies the Design Panel to assign.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.LargeImages">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.XtraBars.BarManager.LargeImages"/> property.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Object"/> which provides large images for bar button items.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.LayoutToolbar">
+            <summary>
+                <para>Gets or sets the <b>Layout Toolbar</b> controlled by this bar manager.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Bar"/> object which represents the <b>Layout Toolbar</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.RegisterCommandHandler(DevExpress.XtraReports.UserDesigner.ICommandHandler)">
+            <summary>
+                <para>Registers the specified command handler.
+</para>
+            </summary>
+            <param name="handler">
+		An object implementing the <see cref="T:DevExpress.XtraReports.UserDesigner.ICommandHandler"/> interface, that represents the command handler.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.SetCommandVisibility(System.ComponentModel.Design.CommandID,DevExpress.XtraBars.BarItemVisibility)">
+            <summary>
+                <para>Changes the visibility of any bar item which executes the specified command.
+</para>
+            </summary>
+            <param name="commandID">
+		A <see cref="T:System.ComponentModel.Design.CommandID"/> object specifying the command whose visibility needs to be changed.
+
+
+            </param>
+            <param name="visibility">
+		One of the <see cref="T:DevExpress.XtraBars.BarItemVisibility"/> enumeration's values that specifies the new visibility state.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.SetCommandVisibility(System.ComponentModel.Design.CommandID[],DevExpress.XtraBars.BarItemVisibility)">
+            <summary>
+                <para>Changes the visibility of any bar item which executes any of the specified commands.
+</para>
+            </summary>
+            <param name="commands">
+		An array of <see cref="T:System.ComponentModel.Design.CommandID"/> objects specifying the commands whose visibility needs to be changed.
+
+            </param>
+            <param name="visibility">
+		One of the <see cref="T:DevExpress.XtraBars.BarItemVisibility"/> enumeration's values that specifies the new visibility state.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.SetToolboxType(DevExpress.XtraBars.Bar,DevExpress.XtraReports.UserDesigner.ToolboxType)">
+            <summary>
+                <para>Sets the Toolbox type used by the XRDesignBarManager.
+</para>
+            </summary>
+            <param name="bar">
+		A <see cref="T:DevExpress.XtraBars.Bar"/> object, representing the Toolbox.
+
+            </param>
+            <param name="value">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ToolboxType"/> enumeration value.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.Toolbar">
+            <summary>
+                <para>Gets or sets the <b>Main Toolbar</b> controlled by this bar manager.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Bar"/> object which represents the <b>Main Toolbar</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.UnregisterCommandHandler(DevExpress.XtraReports.UserDesigner.ICommandHandler)">
+            <summary>
+                <para>Unregisters the specified command handler.
+</para>
+            </summary>
+            <param name="handler">
+		An object implementing the <see cref="T:DevExpress.XtraReports.UserDesigner.ICommandHandler"/> interface, that represents the command handler.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.Updates">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object associated with the XRDesignBarManager.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object assigned to the current XRDesignBarManager object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignBarManager.ZoomItem">
+            <summary>
+                <para>Gets or sets the editor which is used to specify a zoom value for the report's design surface.
+
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraReports.UserDesigner.XRZoomBarEditItem"/> object which represents the edtitor used to specify the zoom value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.TypedDesignDockPanel">
+
+            <summary>
+                <para>Represents the base class for the dock panels in the End-User Designer.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.TypedDesignDockPanel.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, to which the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/>, that owns the current dock panel, belongs.
+</para>
+            </summary>
+            <value>The <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, to which the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/> belongs.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.TreeViewDesignDockPanel">
+
+            <summary>
+                <para>Represents the base class for the dock panels that represent tree view-like UI elements of the End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.TreeViewDesignDockPanel.CollapseAll">
+            <summary>
+                <para>Collapses all the nodes in the tree view dock panel.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.TreeViewDesignDockPanel.ExpandAll">
+            <summary>
+                <para>Expands all the nodes in the tree view dock panel.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.ToolBoxDockPanel">
+
+            <summary>
+                <para>Represents the Toolbox dock panel in the End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.ToolBoxDockPanel.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ToolBoxDockPanel class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.ToolBoxDockPanel.#ctor(DevExpress.XtraBars.Docking.DockManager,DevExpress.XtraBars.Docking.DockingStyle)">
+            <summary>
+                <para>Initializes a new instance of the ToolBoxDockPanel class with the specified docking style and owner.
+</para>
+            </summary>
+            <param name="dockManager">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockManager"/> object which represents the owner of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.DockManager"/> property.
+
+            </param>
+            <param name="dock">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockingStyle"/> enumeration value which represents the docking style of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.Dock"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.ToolBoxDockPanel.GroupsStyle">
+            <summary>
+                <para>Gets or sets the style for presenting the groups' contents.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroupStyle"/> value specifying how the groups' contents are presented.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.ToolBoxDockPanel.PaintStyleName">
+            <summary>
+                <para>Gets or sets the name of the paint style applied to the Tool Box.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the name of the paint style applied to the Tool Box.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.ReportStateEventHandler">
+
+            <summary>
+                <para>Represents the method that will handle the <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.ReportStateChanged"/> and <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ReportStateChanged"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.ReportStateEventHandler.Invoke(System.Object,DevExpress.XtraReports.UserDesigner.ReportStateEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.ReportStateChanged"/> and <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ReportStateChanged"/> events.
+</para>
+            </summary>
+            <param name="sender">
+		An object of any type that triggers the <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.ReportStateChanged"/> or <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ReportStateChanged"/> event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportStateEventArgs"/> object that provides data for the <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.ReportStateChanged"/> and <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ReportStateChanged"/> events.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.ReportExplorerDockPanel">
+
+            <summary>
+                <para>Represents the Report Explorer dock panel in the End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.ReportExplorerDockPanel.#ctor(DevExpress.XtraBars.Docking.DockManager,DevExpress.XtraBars.Docking.DockingStyle)">
+            <summary>
+                <para>Initializes a new instance of the ReportExplorerDockPanel class with the specified docking style and owner.
+</para>
+            </summary>
+            <param name="dockManager">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockManager"/> object which represents the owner of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.DockManager"/> property.
+
+            </param>
+            <param name="dock">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockingStyle"/> enumeration value which represents the docking style of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.Dock"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.ReportExplorerDockPanel.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportExplorerDockPanel class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.GroupAndSortDockPanel">
+
+            <summary>
+                <para>Represents the Group and Sort dock panel in the End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.GroupAndSortDockPanel.#ctor(DevExpress.XtraBars.Docking.DockManager,DevExpress.XtraBars.Docking.DockingStyle)">
+            <summary>
+                <para>Initializes a new instance of the GroupAndSortDockPanel class with the specified docking style and owner.
+</para>
+            </summary>
+            <param name="dockManager">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockManager"/> object which represents the owner of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.DockManager"/> property.
+
+            </param>
+            <param name="dock">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockingStyle"/> enumeration value which represents the docking style of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.Dock"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.GroupAndSortDockPanel.#ctor">
+            <summary>
+                <para>Initializes a new instance of the GroupAndSortDockPanel class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.FieldListDockPanel">
+
+            <summary>
+                <para>Represents the Field List dock panel in the End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.FieldListDockPanel.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FieldListDockPanel class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.FieldListDockPanel.#ctor(DevExpress.XtraBars.Docking.DockManager,DevExpress.XtraBars.Docking.DockingStyle)">
+            <summary>
+                <para>Initializes a new instance of the FieldListDockPanel class with the specified docking style and owner.
+</para>
+            </summary>
+            <param name="dockManager">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockManager"/> object which represents the owner of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.DockManager"/> property.
+
+            </param>
+            <param name="dock">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockingStyle"/> enumeration value which represents the docking style of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.Dock"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.FieldListDockPanel.ShowNodeToolTips">
+            <summary>
+                <para>Gets or sets a value indicating whether to show node tooltips for end-users, to teach them to use the Field List.
+
+</para>
+            </summary>
+            <value><b>true</b> to show node tooltips; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.FieldListDockPanel.ShowParametersNode">
+            <summary>
+                <para>Gets or sets a value indicating whether to show the <b>Parameters</b> node for end-users in the Field List.
+
+</para>
+            </summary>
+            <value><b>true</b> to show the Parameters node; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.FieldListDockPanel.UpdateDataSource(System.ComponentModel.Design.IDesignerHost)">
+            <summary>
+                <para>Forcibly updates the structure of data sources currently displayed within this FieldListDockPanel object.
+
+
+
+</para>
+            </summary>
+            <param name="designerHost">
+		A <see cref="T:System.ComponentModel.Design.IDesignerHost"/> object which represents the designer host.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.ErrorListDockPanel">
+
+            <summary>
+                <para>Represents the Scripts Errors dock panel in the End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.ErrorListDockPanel.#ctor(DevExpress.XtraBars.Docking.DockManager,DevExpress.XtraBars.Docking.DockingStyle)">
+            <summary>
+                <para>Initializes a new instance of the ErrorListDockPanel class with the specified docking style and owner.
+</para>
+            </summary>
+            <param name="dockManager">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockManager"/> object which represents the owner of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.DockManager"/> property.
+
+
+            </param>
+            <param name="dock">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockingStyle"/> enumeration value which represents the docking style of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.Dock"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.ErrorListDockPanel.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ErrorListDockPanel class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.DockPanelCollection">
+
+            <summary>
+                <para>Represents a collection of <see cref="T:DevExpress.XtraBars.Docking.DockPanel"/> class descendants.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.DockPanelCollection.AddRange(DevExpress.XtraBars.Docking.DockPanel[])">
+            <summary>
+                <para>Appends an array of dock panels to the collection.
+</para>
+            </summary>
+            <param name="panels">
+		An array of <see cref="T:DevExpress.XtraBars.Docking.DockPanel"/> objects to append to the collection.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.DesignDockPanel">
+
+            <summary>
+                <para>Represents the base class for the dock panels that contain different UI elements of the End-User Designer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.DesignDockPanel.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DesignDockPanel class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.DesignDockPanel.#ctor(DevExpress.XtraBars.Docking.DockManager,DevExpress.XtraBars.Docking.DockingStyle)">
+            <summary>
+                <para>Initializes a new instance of the DesignDockPanel class with the specified docking style and owner.
+</para>
+            </summary>
+            <param name="dockManager">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockManager"/> object which represents the owner of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.DockManager"/> property.
+
+            </param>
+            <param name="dock">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockingStyle"/> enumeration value which represents the docking style of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.Dock"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.DesignDockPanel.Text">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.Text"/> property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value representing the dock panel's caption.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.DesignDockPanel.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, to which the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/>, that owns the current dock panel, belongs.
+</para>
+            </summary>
+            <value>The <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, to which the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/> belongs.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.ReportState">
+
+            <summary>
+                <para>Specifies the state of the report in the End-User Designer.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UserDesigner.ReportState.Changed">
+            <summary>
+                <para>At least one component in the report has been modified.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UserDesigner.ReportState.None">
+            <summary>
+                <para>The report's state is not specified.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UserDesigner.ReportState.Opened">
+            <summary>
+                <para>The report is open in the End-User Designer.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UserDesigner.ReportState.Opening">
+            <summary>
+                <para>The report is in the process of opening.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UserDesigner.ReportState.Saved">
+            <summary>
+                <para>The report has been saved to a file.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.ToolboxType">
+
+            <summary>
+                <para>Specifies the Toolbox type.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UserDesigner.ToolboxType.Custom">
+            <summary>
+                <para>Represents the custom Toolbox type, where custom controls can be placed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UserDesigner.ToolboxType.None">
+            <summary>
+                <para>Specifies that the object isn't used as a Toolbox.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UserDesigner.ToolboxType.Standard">
+            <summary>
+                <para>Represents the standard Toolbox type, where standard report controls are located.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignRibbonFormEx">
+
+            <summary>
+                <para>For internal use. Represents a Ribbon End-User Designer form.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonFormEx.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignRibbonFormEx class with default settings.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonFormEx.DesignRibbonController">
+            <summary>
+                <para>Gets the <b>DesignRibbonController</b> of the Ribbon End-User Designer form.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController"/> object, which represents the <b>Design Ribbon Controller</b> of the Ribbon End-User Designer form.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonFormEx.RibbonControl">
+            <summary>
+                <para>Gets the <b>RibbonControl</b> of the Ribbon End-User Designer form.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Ribbon.RibbonControl"/> object, which represents the <b>Ribbon Control</b> of the Ribbon End-User Designer form.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonFormEx.RibbonStatusBar">
+            <summary>
+                <para>Gets the <b>RibbonStatusBar</b> of the Ribbon End-User Designer form.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Ribbon.RibbonStatusBar"/> object, which represents the <b>Ribbon Status Bar</b> of the Ribbon End-User Designer form.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonFormEx.SetWindowVisibility(DevExpress.XtraReports.UserDesigner.DesignDockPanelType,System.Boolean)">
+            <summary>
+                <para>Sets the visibility of dock panels in the End-User Designer.
+
+</para>
+            </summary>
+            <param name="designDockPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value identifying the dock panel(s) of the End-User Designer.
+
+            </param>
+            <param name="visible">
+		<b>true</b> to display the dock panel(s); otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignFormEx">
+
+            <summary>
+                <para>For internal use. Represents a standard End-User Designer form.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormEx.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignFormEx class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignFormEx.DesignBarManager">
+            <summary>
+                <para>Gets the XRDesignFormEx object of the End-User Designer form.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignBarManager"/> object.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormEx.SetWindowVisibility(DevExpress.XtraReports.UserDesigner.DesignDockPanelType,System.Boolean)">
+            <summary>
+                <para>Sets the visibility of dock panels in the End-User Designer.
+
+
+</para>
+            </summary>
+            <param name="designDockPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value identifying the dock panel(s) of the End-User Designer.
+
+            </param>
+            <param name="visible">
+		<b>true</b> to display the dock panel(s); otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel">
+
+            <summary>
+                <para>Represents a panel used to edit a report in the End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignPanel class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.Activate">
+            <summary>
+                <para>For internal use. Activates the host of the given <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> instance.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.Activated">
+            <summary>
+                <para>For internal use. Occurs when the host of the given XRDesignPanel instance has been activated.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.AddCommandHandler(DevExpress.XtraReports.UserDesigner.ICommandHandler)">
+            <summary>
+                <para>Adds the specified command handler to the command handlers list for one or several of the report commands.
+</para>
+            </summary>
+            <param name="handler">
+		An object which implements the <see cref="T:DevExpress.XtraReports.UserDesigner.ICommandHandler"/> interface, representing the command handler to be added.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.AddService(System.Type,System.Object)">
+            <summary>
+                <para>Adds the specified service to the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> instance.
+</para>
+            </summary>
+            <param name="type">
+		The type of service to add. 
+
+            </param>
+            <param name="value">
+		An <see cref="T:System.Object"/>, representing an instance of the service type to be added. This object must implement or inherit from the type indicated by the <i>type</i> parameter.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.BorderStyle">
+            <summary>
+                <para>Gets or sets the Design Panel's border style.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Controls.BorderStyles"/> enumeration value which specifies the border style for the Design Panel.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.CloseReport">
+            <summary>
+                <para>Closes the report currently being edited in the XRDesignPanel.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.CommandStatusChanged">
+            <summary>
+                <para>Occurs if the status of a menu command has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ComponentAdded">
+            <summary>
+                <para>Occurs after a component has been added to the designer host of the report currently being edited in the Design Panel.
+
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ComponentAdding">
+            <summary>
+                <para>Occurs before a component can be added to the designer host of the report currently being edited in the <b>Design Panel</b>.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ComponentChanged">
+            <summary>
+                <para>Occurs when altering a property that belongs to any component in the designer host of the report currently being edited.
+
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ComponentRemoved">
+            <summary>
+                <para>Occurs after any component has been removed from the designer host of the report being currently edited in the <b>Design Panel</b>.
+
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ComponentRemoving">
+            <summary>
+                <para>Occurs before any component can be removed from the designer host of the report being currently edited in the <b>Design Panel</b>.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.CreateSaveFileDialog(DevExpress.XtraReports.UI.XtraReport,System.String)">
+            <summary>
+                <para>Creates the <b>SaveFile</b> dialog window to save the current report's configuration to a REPX file.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object to be saved to a REPX file.
+
+            </param>
+            <param name="fileName">
+		A <see cref="T:System.String"/> representing the path (including the filename), specifying where to save the report.
+
+            </param>
+            <returns>A <see cref="T:System.Windows.Forms.SaveFileDialog"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.Deactivate">
+            <summary>
+                <para>For internal use. Deactivates the host of the current <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> instance.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.Deactivated">
+            <summary>
+                <para>For internal use. Occurs when the host of the given <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> instance has been deactivated.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.DesignerHostLoaded">
+            <summary>
+                <para>Occurs after the designer host is activated for a report currently being edited in the current Design Panel.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.DesignerHostLoading">
+            <summary>
+                <para>For internal use. Occurs when the host of the current XRDesignPanel instance starts loading.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ExecCommand(DevExpress.XtraReports.UserDesigner.ReportCommand)">
+            <summary>
+                <para>Executes the specified report command without any parameters passed to it.
+</para>
+            </summary>
+            <param name="command">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration value, specifying the report command to execute.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ExecCommand(DevExpress.XtraReports.UserDesigner.ReportCommand,System.Object[])">
+            <summary>
+                <para>Executes the specified report command and passes the specified parameters to it.
+
+</para>
+            </summary>
+            <param name="command">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration value, specifying the report command to execute.
+
+            </param>
+            <param name="args">
+		An array of <see cref="T:System.Object"/> values, specifying the parameters to be passed to the report command.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ExecuteCommand(System.ComponentModel.Design.CommandID,System.Object[])">
+            <summary>
+                <para>Executes the specified command with the specified set of parameters.
+</para>
+            </summary>
+            <param name="cmdID">
+		A <see cref="T:System.ComponentModel.Design.CommandID"/> object.
+
+            </param>
+            <param name="parameters">
+		An array of <see cref="T:System.Object"/> values that specify the parameters for the command to be executed.
+
+            </param>
+            <returns><b>true</b> if the specified command is executed; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ExecuteCommand(System.ComponentModel.Design.CommandID)">
+            <summary>
+                <para>Executes the specified command.
+</para>
+            </summary>
+            <param name="cmdID">
+		A <see cref="T:System.ComponentModel.Design.CommandID"/> object.
+
+            </param>
+            <returns><b>true</b> if the specified command is executed; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.FileName">
+            <summary>
+                <para>Gets or sets the path (including the file name) where the report currently being edited in the Design Panel will be saved. A report definition is usually saved to a REPX file.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> representing the path (including the filename) to a REPX file.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.FindMenuCommand(System.ComponentModel.Design.CommandID)">
+            <summary>
+                <para>Searches for the specified command ID.
+</para>
+            </summary>
+            <param name="cmdID">
+		An object of the <see cref="T:System.ComponentModel.Design.CommandID"/> type, identifying the command to be found.
+
+            </param>
+            <returns>A <see cref="T:System.ComponentModel.Design.MenuCommand"/> object, representing the command associated with the specified ID. Returns <b>null</b> (<b>Nothing</b> in Visual Basic) if no command is found.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.GetCommandEnabled(DevExpress.XtraReports.UserDesigner.ReportCommand)">
+            <summary>
+                <para>Determines whether the specified report command is currently enabled in the End-User Designer.
+
+</para>
+            </summary>
+            <param name="command">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration value, specifying the command whose enabled state is to be determined.
+
+
+            </param>
+            <returns><b>true</b> if the report command is enabled; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.GetCommandVisibility(DevExpress.XtraReports.UserDesigner.ReportCommand)">
+            <summary>
+                <para>Gets the visibility state of the specified report command in the Design Panel.
+
+</para>
+            </summary>
+            <param name="command">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration value, which specifies the command whose visibility is to be determined.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraReports.UserDesigner.CommandVisibility"/> enumeration value, which represents the visibility state of the report command.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.GetSelectedComponents">
+            <summary>
+                <para>Gets the collection of components that are currently selected in the Design Panel.
+
+</para>
+            </summary>
+            <returns>A collection that represents the current set of selected components.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.GetService(System.Type)">
+            <summary>
+                <para>Obtains the service object of the specified type from the designer host used by the XRDesignPanel.
+
+</para>
+            </summary>
+            <param name="serviceType">
+		A <see cref="T:System.Type"/> object that specifies the type of the service object to obtain.
+
+
+            </param>
+            <returns>A service object of the specified type, or <b>null</b> (<b>Nothing</b> in Visual Basic) if there is no service object of this type.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.OpenReport(System.String)">
+            <summary>
+                <para>Loads a report definition from the specified file and opens it in the XRDesignPanel.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> representing the full path to the report file (.REPX) to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.OpenReport(System.IO.Stream)">
+            <summary>
+                <para>Loads a report definition from the specified stream and opens it in the XRDesignPanel.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object which contains a report to be opened in the design panel.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.OpenReport(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Loads the specified report and opens it in the XRDesignPanel.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants representing the report to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.OpenReportFile">
+            <summary>
+                <para>Invokes the <see cref="T:System.Windows.Forms.OpenFileDialog"/>, which allow your end-users to locate and choose a report, and load it into the Design Panel.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.RemoveCommandHandler(DevExpress.XtraReports.UserDesigner.ICommandHandler)">
+            <summary>
+                <para>Removes the specified command handler for one or several of the report commands.
+</para>
+            </summary>
+            <param name="handler">
+		An object which implements the <see cref="T:DevExpress.XtraReports.UserDesigner.ICommandHandler"/> interface, representing the command handler to be removed.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.RemoveService(System.Type)">
+            <summary>
+                <para>Removes the specified service from the Design Panel.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:System.Type"/> value, specifying the type of service to remove. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.Report">
+            <summary>
+                <para>Gets the report currently opened in the Design Panel.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object currently opened in the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ReportState">
+            <summary>
+                <para>Gets the state of the report currently being edited in the Design Panel.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportState"/> enumeration value which represents the current state of a report.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ReportStateChanged">
+            <summary>
+                <para>Occurs when the <see cref="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ReportState"/> property has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SaveChangedReport">
+            <summary>
+                <para>Saves the configuration of the report currently opened in the Design Panel to a file, only if changes have been made to the report.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Windows.Forms.DialogResult"/> enumeration value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SaveReport">
+            <summary>
+                <para>Saves the definition of the report currently open in the XRDesignPanel, to the file specified by the <see cref="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.FileName"/> property.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SaveReport(System.String)">
+            <summary>
+                <para>Saves the definition of the report currently open in the XRDesignPanel to the specified file.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> value specifying the file name.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SaveReportAs">
+            <summary>
+                <para>Saves the configuration of the report which is currently open in the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> to a file. The folder it is saved to, is specified in the <b>Save As</b> window.
+
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SelectedTabIndex">
+            <summary>
+                <para>Gets or sets the index of the tab currently selected in the Design Panel.
+
+</para>
+            </summary>
+            <value>An integer value which represents the index of the currently selected tab.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SelectedTabIndexChanged">
+            <summary>
+                <para>Occurs after the <see cref="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SelectedTabIndex"/> property's value has been changed.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SelectedToolboxItemChanged">
+            <summary>
+                <para>Occurs if the currently selected Toolbox item has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SelectedToolboxItemUsed">
+            <summary>
+                <para>Occurs when a control represented by the currently selected Toolbox item has been dropped onto a report.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SelectionChanged">
+            <summary>
+                <para>Occurs if the collection of currently selected components in the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> is changed.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SetCommandVisibility(DevExpress.XtraReports.UserDesigner.ReportCommand,DevExpress.XtraReports.UserDesigner.CommandVisibility)">
+            <summary>
+                <para>Changes the visibility state of the specified report command in the End-User Designer.
+
+</para>
+            </summary>
+            <param name="command">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration value which specifies the command whose visibility needs to be changed.
+
+            </param>
+            <param name="visibility">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.CommandVisibility"/> enumeration value which specifies the new visibility state for the command.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanel.SetCommandVisibility(DevExpress.XtraReports.UserDesigner.ReportCommand[],DevExpress.XtraReports.UserDesigner.CommandVisibility)">
+            <summary>
+                <para>Changes the visibility state of the specified report commands in the End-User Designer.
+
+</para>
+            </summary>
+            <param name="commands">
+		An array of <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration values which specify the commands whose visibility needs to be changed.
+
+            </param>
+            <param name="visibility">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.CommandVisibility"/> enumeration value which specifies the new visibility state for the commands.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ShowComponentTray">
+            <summary>
+                <para>Gets or sets a value indicating whether the <b>Component Tray</b> should be shown at the bottom of the Design Panel.
+
+</para>
+            </summary>
+            <value><b>true</b> to show the Component Tray; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.ReportStateEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.ReportStateChanged"/> and <see cref="E:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ReportStateChanged"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.ReportStateEventArgs.#ctor(DevExpress.XtraReports.UserDesigner.ReportState)">
+            <summary>
+                <para>Initializes a new instance of the ReportStateEventArgs class with the specified report state.
+</para>
+            </summary>
+            <param name="reportState">
+		One of the <see cref="T:DevExpress.XtraReports.UserDesigner.ReportState"/> enumeration's values specifying the state of the report.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.ReportStateEventArgs.ReportState">
+            <summary>
+                <para>Gets the report's state for the event handler.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportState"/> value representing the report's state for this event handler.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignGroupAndSort">
+
+            <summary>
+                <para>Represents the Group and Sort panel within an End-User Designer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignGroupAndSort.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignGroupAndSort class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignGroupAndSort.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object associated with the XRDesignGroupAndSort.
+
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object assigned to the current XRDesignGroupAndSort object.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.IFieldListService">
+
+            <summary>
+                <para>Provides methods for specifying custom images for the Field List items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.IFieldListService.CreateImageCollection">
+            <summary>
+                <para>Creates the collection of custom images for the Field List items.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.ImageCollection"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.IFieldListService.GetColumnImageIndex(System.ComponentModel.PropertyDescriptor,System.String,System.Boolean)">
+            <summary>
+                <para>Gets the index of the image defined for the specified data member.
+</para>
+            </summary>
+            <param name="property">
+		A <see cref="T:System.ComponentModel.PropertyDescriptor"/> object that provides an abstraction of a Field List item.
+
+            </param>
+            <param name="dataMember">
+		A <see cref="T:System.String"/>, specifying the name of the data member.
+
+            </param>
+            <param name="isList">
+		<b>true</b> if the member is a data table; otherwise <b>false</b>.
+
+            </param>
+            <returns>An integer value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.IFieldListService.GetDataSourceImageIndex(System.Object)">
+            <summary>
+                <para>Gets the index of the image defined for the specified data source.
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/>, specifying the report's data source.
+
+            </param>
+            <returns>An integer value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.IFieldListService.GetNoneImageIndex">
+            <summary>
+                <para>Gets the index of the image defined for empty items.
+</para>
+            </summary>
+            <returns>An integer value.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.Extensions.ReportDesignExtension">
+
+            <summary>
+                <para>Used to provide parameters of complex types to a report, as well as to serialize them to XML and other custom objects along with report definitions.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportDesignExtension.AddParameterTypes(System.Collections.Generic.IDictionary`2)">
+            <summary>
+                <para>Adds custom parameter types to the ReportDesignExtension.
+</para>
+            </summary>
+            <param name="dictionary">
+		A collection of custom parameter types.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportDesignExtension.AssociateReportWithExtension(DevExpress.XtraReports.UI.XtraReport,System.String)">
+            <summary>
+                <para>Associates the report with the custom design extension, to employ parameters of custom types.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> class descendant.
+
+            </param>
+            <param name="contextName">
+		A <see cref="T:System.String"/> value, identifying the extension.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportDesignExtension.GetEditableDataTypes">
+            <summary>
+                <para>Gets the editable custom parameter types.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Type"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportDesignExtension.GetSerializableDataTypes">
+            <summary>
+                <para>Gets the serializable custom parameter types.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Type"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportDesignExtension.RegisterExtension(DevExpress.XtraReports.Extensions.ReportDesignExtension,System.String)">
+            <summary>
+                <para>Registers the custom report design extension, to employ parameters of custom types.
+</para>
+            </summary>
+            <param name="extension">
+		A <see cref="T:DevExpress.XtraReports.Extensions.ReportDesignExtension"/> object.
+
+            </param>
+            <param name="contextName">
+		A <see cref="T:System.String"/> value, identifying the extension.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.Extensions.ReportStorageExtension">
+
+            <summary>
+                <para>Carries the functionality that is required to implement custom serialization of report definitions.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.CanSetData(System.String)">
+            <summary>
+                <para>Determines whether it is allowed to store a report in a <b>Report Storage</b>, using the specified URL.
+</para>
+            </summary>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying the URL to store a report.
+
+            </param>
+            <returns><b>true</b> if it is allowed to store a report using the specified URL; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.GetData(System.String)">
+            <summary>
+                <para>Returns a report object stored in a <b>Report Storage</b> using the specified URL.
+</para>
+            </summary>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying an URL, which was used to store a report.
+
+            </param>
+            <returns>An array of <see cref="T:System.Byte"/> values, representing a stream containing a report definition.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.GetNewUrl">
+            <summary>
+                <para>Returns a new unique URL for a new report being saved.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value representing the new URL.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.GetStandardUrls(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+                <para>Returns the array of the existing report URLs.
+</para>
+            </summary>
+            <param name="context">
+		An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext"/> interface.
+
+            </param>
+            <returns>An array of <see cref="T:System.String"/> values specifying the report URLs.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.GetStandardUrlsSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+                <para>Determines whether standard URLs are supported.
+
+</para>
+            </summary>
+            <param name="context">
+		An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext"/> interface.
+
+            </param>
+            <returns><b>true</b> if standard URLs are supported; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.IsValidUrl(System.String)">
+            <summary>
+                <para>Determines whether the specified URL is valid in the current <b>Report Storage</b>.
+</para>
+            </summary>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying an URL value.
+
+            </param>
+            <returns><b>true</b> if a report exists in a storage for the specified URL; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.RegisterExtensionGlobal(DevExpress.XtraReports.Extensions.ReportStorageExtension)">
+            <summary>
+                <para>Registers the specified <b>Report Storage</b> extension to be used by all End-User Designers within the current application.
+</para>
+            </summary>
+            <param name="extension">
+		A <see cref="T:DevExpress.XtraReports.Extensions.ReportStorageExtension"/> class descendant.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.SetData(DevExpress.XtraReports.UI.XtraReport,System.String)">
+            <summary>
+                <para>Stores the specified report to a <b>Report Storage</b> using the specified URL.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> class descendant, specifying a report object to be saved.
+
+            </param>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying the URL, which should be used to save a report.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.SetData(DevExpress.XtraReports.UI.XtraReport,System.IO.Stream)">
+            <summary>
+                <para>Stores the specified report to a <b>Report Storage</b> using the specified stream.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> class descendant, specifying a report object to be saved.
+
+            </param>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, which should be used to save a report.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.Extensions.ReportStorageExtension.SetNewData(DevExpress.XtraReports.UI.XtraReport,System.String)">
+            <summary>
+                <para>Stores the specified report object in a <b>Report Storage</b> as a new report using the default URL.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object.
+
+            </param>
+            <param name="defaultUrl">
+		A <see cref="T:System.String"/> value specifying the new URL.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> value specifying the report's URL.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.FieldListService">
+
+            <summary>
+                <para>A service which provides functionality specific to a Field List in a End-User Report Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.FieldListService.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FieldListService class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.FieldListService.CreateImageCollection">
+            <summary>
+                <para>Creates a collection of images, used in a Field List to display its items.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.Utils.ImageCollection"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.FieldListService.GetColumnImageIndex(System.ComponentModel.PropertyDescriptor,System.String,System.Boolean)">
+            <summary>
+                <para>Returns an index of an image shown for the specified data member.
+</para>
+            </summary>
+            <param name="property">
+		A <see cref="T:System.ComponentModel.PropertyDescriptor"/> object specifying the type of the <i>dataMember</i> (e.g. <see cref="T:System.String"/>, <see cref="T:System.DateTime"/>, <see cref="T:System.Boolean"/>, etc.), when it is possible to determine.
+
+
+            </param>
+            <param name="dataMember">
+		A <see cref="T:System.String"/> specifying the data member, for which an image should be obtained.
+
+            </param>
+            <param name="isList">
+		<b>true</b> if the specified <i>dataMember</i> points to a list (e.g. a data table, containing data fields, or another container of objects); otherwise, <b>false</b>.
+
+            </param>
+            <returns>An integer value representing the image index.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.FieldListService.GetDataSourceImageIndex(System.Object)">
+            <summary>
+                <para>Returns an index of an image shown for the specified datasource.
+</para>
+            </summary>
+            <param name="dataSource">
+		A <see cref="T:System.Object"/> specifying a datasource, for which an image should be obtained.
+
+            </param>
+            <returns>An integer value representing the image index.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.FieldListService.GetNoneImageIndex">
+            <summary>
+                <para>Returns an index of an image shown for the "None" item.
+</para>
+            </summary>
+            <returns>An integer value representing the image index.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.FieldListService.Instance">
+            <summary>
+                <para>Returns an instance of the Field List service, which is currently used by a Field List.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.XtraReports.UserDesigner.IFieldListService"/> interface.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignReportExplorer">
+
+            <summary>
+                <para>Represents the Report Explorer control used to create an End-User Designer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignReportExplorer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignReportExplorer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignReportExplorer.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object associated with the XRDesignReportExplorer.
+
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object assigned to the current XRDesignReportExplorer object.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController">
+
+            <summary>
+                <para>Represents a component used to create End-User Designer pages inside a <see cref="T:DevExpress.XtraBars.Ribbon.RibbonControl"/> when creating a Ribbon End-User Designer form.
+
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignRibbonController class with default settings.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController.BeginInit">
+            <summary>
+                <para>For internal use. Starts the XRDesignRibbonController's initialization. Initialization occurs at runtime.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController.EndInit">
+            <summary>
+                <para>For internal use. Ends the XRDesignRibbonController's runtime initialization.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController.ImageCollection">
+            <summary>
+                <para>Gets the collection of images used in the XRDesignRibbonController UI.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraPrinting.Preview.RibbonImageCollection"/> object.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController.RegisterCommandHandler(DevExpress.XtraReports.UserDesigner.ICommandHandler)">
+            <summary>
+                <para>Registers the specified command handler.
+</para>
+            </summary>
+            <param name="commandHandler">
+		An object implementing the <see cref="T:DevExpress.XtraReports.UserDesigner.ICommandHandler"/> interface, that represents the command handler.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController.RibbonControl">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraBars.Ribbon.RibbonControl"/> into which the <b>Design Ribbon Controller</b> embeds its tabs.
+
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Ribbon.RibbonControl"/> object.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController.UnregisterCommandHandler(DevExpress.XtraReports.UserDesigner.ICommandHandler)">
+            <summary>
+                <para>Unregisters the specified command handler.
+</para>
+            </summary>
+            <param name="commandHandler">
+		An object implementing the <see cref="T:DevExpress.XtraReports.UserDesigner.ICommandHandler"/> interface, that represents the command handler.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController.XRDesignDockManager">
+            <summary>
+                <para>Gets or sets the component used to create standard dockable panels in the <b>End-User Designer</b>.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/> object.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object associated with the XRDesignRibbonController.
+
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object assigned to the current XRDesignRibbonController object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener">
+
+            <summary>
+                <para>For internal use. Provides the functionality for adjusting <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignMdiController"/> objects.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener.#ctor(DevExpress.XtraReports.UserDesigner.IDesignPanelListener)">
+            <summary>
+                <para>For internal use. Initializes a new instance of the <see cref="T:DevExpress.XtraReports.UI.XRWatermark"/> class with the specified settings.
+</para>
+            </summary>
+            <param name="designControl">
+		@nbsp;
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignPanelListener class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener.DesignControl">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <value>@nbsp;
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection">
+
+            <summary>
+                <para>For internal use. Represents the collection of the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener"/> objects.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection.#ctor(System.IServiceProvider)">
+            <summary>
+                <para>Initializes a new instance of the XRDesignPanelListenersCollection class with the specified service provider.
+</para>
+            </summary>
+            <param name="serviceProvider">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection.Add(DevExpress.XtraReports.UserDesigner.XRDesignPanelListener)">
+            <summary>
+                <para>Appends the specified item to the current collection.
+</para>
+            </summary>
+            <param name="item">
+		An <see cref="T:DevExpress.XtraReports.UserDesigner.IDesignPanelListener"/> object to append to the collection.
+
+            </param>
+            <returns>An integer value indicating the position into which a new element was inserted.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection.Add(DevExpress.XtraReports.UserDesigner.IDesignPanelListener)">
+            <summary>
+                <para>Appends the specified item to the current collection.
+</para>
+            </summary>
+            <param name="item">
+		An object implementing the <see cref="T:DevExpress.XtraReports.UserDesigner.IDesignPanelListener"/> interface to append to the collection.
+
+            </param>
+            <returns>An integer value indicating the position into which a new element was inserted.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection.AddRange(DevExpress.XtraReports.UserDesigner.XRDesignPanelListener[])">
+            <summary>
+                <para>Appends an array of listeners to the collection.
+</para>
+            </summary>
+            <param name="items">
+		An array of <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener"/> objects to append to the collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection.Contains(DevExpress.XtraReports.UserDesigner.IDesignPanelListener)">
+            <summary>
+                <para>For internal use. Determines whether the collection contains the specified object.
+
+</para>
+            </summary>
+            <param name="item">
+		@nbsp;
+
+            </param>
+            <returns>A Boolean value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection.Contains(DevExpress.XtraReports.UserDesigner.XRDesignPanelListener)">
+            <summary>
+                <para>For internal use. Determines whether the collection contains the specified <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener"/> object.
+
+</para>
+            </summary>
+            <param name="item">
+		An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener"/> object.
+
+            </param>
+            <returns>A Boolean value.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection.Item(System.Int32)">
+            <summary>
+                <para>For internal use. Provides access to individual items in the collection.
+</para>
+            </summary>
+            <param name="index">
+		A zero-based integer specifying the desired item's position within the collection. If it's negative or exceeds the last available index, an exception is raised. 
+
+            </param>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener"/> object.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection.Remove(DevExpress.XtraReports.UserDesigner.XRDesignPanelListener)">
+            <summary>
+                <para>For internal use. Removes the specified <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener"/> object from the collection.
+
+</para>
+            </summary>
+            <param name="item">
+		An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListener"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection.Remove(DevExpress.XtraReports.UserDesigner.IDesignPanelListener)">
+            <summary>
+                <para>For internal use. Removes the specified object from the collection.
+
+</para>
+            </summary>
+            <param name="item">
+		@nbsp;
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignMdiController">
+
+            <summary>
+                <para>Represents a component used to create an MDI End-User Designer.
+
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignMdiController class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.ActiveDesignPanel">
+            <summary>
+                <para>Provides access to the currently active Design Panel of the XRDesignMdiController.
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, representing the active Design Panel.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.AddCommandHandler(DevExpress.XtraReports.UserDesigner.ICommandHandler)">
+            <summary>
+                <para>Adds the specified command handler to the command handlers list for one or several of the report commands.
+</para>
+            </summary>
+            <param name="handler">
+		An object which implements the <see cref="T:DevExpress.XtraReports.UserDesigner.ICommandHandler"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.AddService(System.Type,System.Object,System.Boolean)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="serviceType">
+		A <see cref="T:System.Type"/> value, specifying the service type.
+
+            </param>
+            <param name="serviceInstance">
+		A <see cref="T:System.Object"/>, specifying the service instance.
+
+            </param>
+            <param name="promote">
+		
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.AddService(System.Type,System.Object)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="serviceType">
+		A <see cref="T:System.Type"/> value, specifying the service type.
+
+            </param>
+            <param name="serviceInstance">
+		A <see cref="T:System.Object"/>, specifying the service instance.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback,System.Boolean)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="serviceType">
+		A <see cref="T:System.Type"/> value, specifying the service type.
+
+            </param>
+            <param name="callback">
+		 [To be supplied] 
+            </param>
+            <param name="promote">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="serviceType">
+		A <see cref="T:System.Type"/> value, specifying the service type.
+
+            </param>
+            <param name="callback">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.CreateNewReport">
+            <summary>
+                <para>Creates a new report, and loads it into a new <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> instance.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.DesignPanelListeners">
+            <summary>
+                <para>For internal use. Provides access to the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection"/> class.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanelListenersCollection"/> object.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.DesignPanelLoaded">
+            <summary>
+                <para>Occurs when an <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object has been loaded.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.Form">
+            <summary>
+                <para>Specifies the form to associate with the XRDesignMdiController.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.Form"/> object.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.GetCommandVisibility(DevExpress.XtraReports.UserDesigner.ReportCommand)">
+            <summary>
+                <para>Gets the visibility state of the specified report command.
+
+</para>
+            </summary>
+            <param name="command">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration value, which specifies the command whose visibility is to be determined.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraReports.UserDesigner.CommandVisibility"/> enumeration value, which represents the visibility state of the report command.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.OpenReport">
+            <summary>
+                <para>Loads the specified report instance to the XRDesignMdiController.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.OpenReport(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Loads the specified report instance to the XRDesignMdiController.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants representing the report to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.OpenReport(System.String)">
+            <summary>
+                <para>Loads the report definition from the specified REPX file and opens it in the XRDesignMdiController.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> representing the full path to the report file (.REPX) to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.RemoveCommandHandler(DevExpress.XtraReports.UserDesigner.ICommandHandler)">
+            <summary>
+                <para>Removes the specified command handler for one or several of the report commands.
+</para>
+            </summary>
+            <param name="handler">
+		An object which implements the <see cref="T:DevExpress.XtraReports.UserDesigner.ICommandHandler"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.RemoveService(System.Type)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="serviceType">
+		A <see cref="T:System.Type"/> value, specifying the service type.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.RemoveService(System.Type,System.Boolean)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="serviceType">
+		A <see cref="T:System.Type"/> value, specifying the service type.
+
+            </param>
+            <param name="promote">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.SetCommandVisibility(DevExpress.XtraReports.UserDesigner.ReportCommand[],DevExpress.XtraReports.UserDesigner.CommandVisibility)">
+            <summary>
+                <para>Changes the visibility of the specified report commands.
+</para>
+            </summary>
+            <param name="commands">
+		An array of <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration values, which specify the commands whose visibility needs to be changed.
+
+            </param>
+            <param name="visibility">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.CommandVisibility"/> enumeration value, which specifies the visibility state of the report command.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.SetCommandVisibility(DevExpress.XtraReports.UserDesigner.ReportCommand,DevExpress.XtraReports.UserDesigner.CommandVisibility)">
+            <summary>
+                <para>Changes the visibility of the specified report command.
+</para>
+            </summary>
+            <param name="command">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.ReportCommand"/> enumeration value, which specifies the command whose visibility needs to be changed.
+
+            </param>
+            <param name="visibility">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.CommandVisibility"/> enumeration value, which specifies the visibility state of the report command.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignMdiController.XtraTabbedMdiManager">
+            <summary>
+                <para>Gets or sets the MDI Manager that provides the multi-document interface for the XRDesignMdiController.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraTabbedMdi.XtraTabbedMdiManager"/> object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.PropertyGridDockPanel">
+
+            <summary>
+                <para>Represents the Property Grid dock panel in the End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.PropertyGridDockPanel.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PropertyGridDockPanel class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.PropertyGridDockPanel.#ctor(DevExpress.XtraBars.Docking.DockManager,DevExpress.XtraBars.Docking.DockingStyle)">
+            <summary>
+                <para>Initializes a new instance of the PropertyGridDockPanel class with the specified docking style and owner.
+</para>
+            </summary>
+            <param name="dockManager">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockManager"/> object which represents the owner of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.DockManager"/> property.
+
+            </param>
+            <param name="dock">
+		A <see cref="T:DevExpress.XtraBars.Docking.DockingStyle"/> enumeration value which represents the docking style of the created object. This value is assigned to the <see cref="P:DevExpress.XtraBars.Docking.DockPanel.Dock"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.PropertyGridDockPanel.ShowCategories">
+            <summary>
+                <para>Gets or sets a value indicating whether to show categories for the items in the Property Grid, or show them in alphabetical order.
+
+</para>
+            </summary>
+            <value><b>true</b> to show categories; <b>false</b> to sort alphabetically.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.PropertyGridDockPanel.ShowDescription">
+            <summary>
+                <para>Gets or sets a value indicating whether to show the <b>Description</b> bar at the bottom of the Property Grid.
+
+</para>
+            </summary>
+            <value><b>true</b> to show the Description bar; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm">
+
+            <summary>
+                <para>Represents an MDI Ribbon End-User Report Designer form.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignRibbonForm class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.ActiveDesignPanel">
+            <summary>
+                <para>Provides access to the currently active Design Panel of the XRDesignRibbonForm.
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, representing the active Design Panel.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.DesignDockManager">
+            <summary>
+                <para>Specifies the options of an <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/> object of a Ribbon End-User Designer form. 
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/> object, containing dock panels of the End-User Designer. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.DesignMdiController">
+            <summary>
+                <para>Gets the MDI Controller associated with the XRDesignRibbonForm instance.
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignMdiController"/> object, which represents the MDI Controller associated with the form.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.DesignRibbonController">
+            <summary>
+                <para>Gets the <b>DesignRibbonController</b> of the Ribbon End-User Designer form.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignRibbonController"/> object, which represents the <b>Design Ribbon Controller</b> of the Ribbon End-User Designer form.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.OpenReport(DevExpress.XtraReports.UI.XtraReport,DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Loads the specified report instance into the XRDesignRibbonForm with the specified look and feel settings.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants representing the report to be opened.
+
+
+            </param>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the Ribbon End-User Designer form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.OpenReport(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Loads the specified report instance into the XRDesignRibbonForm.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants representing the report to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.OpenReport(System.String)">
+            <summary>
+                <para>Loads the report definition from the specified REPX file and opens it in the XRDesignRibbonForm.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> representing the full path to the report file (.REPX) to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.OpenReport(System.String,DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Loads the report definition from the specified REPX file and opens it in the XRDesignRibbonForm with the specified look and feel settings.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> representing the full path to the report file (.REPX) to be opened.
+
+
+            </param>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object, which specifies the look and feel settings applied to the Ribbon End-User Designer form.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.RibbonControl">
+            <summary>
+                <para>Gets the <b>RibbonControl</b> of the Ribbon End-User Designer form.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Ribbon.RibbonControl"/> object, which represents the <b>Ribbon Control</b> of the Ribbon End-User Designer form.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.RibbonStatusBar">
+            <summary>
+                <para>Gets the <b>RibbonStatusBar</b> of the Ribbon End-User Designer form.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraBars.Ribbon.RibbonStatusBar"/> object, which represents the <b>Ribbon Status Bar</b> of the Ribbon End-User Designer form.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm.SetWindowVisibility(DevExpress.XtraReports.UserDesigner.DesignDockPanelType,System.Boolean)">
+            <summary>
+                <para>Sets the visibility of dock panels in the Ribbon End-User Designer form.
+
+</para>
+            </summary>
+            <param name="designDockPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value, identifying the dock panel(s) of the End-User Designer.
+
+            </param>
+            <param name="visible">
+		<b>true</b> to display the dock panel(s); otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignForm">
+
+            <summary>
+                <para>Represents an MDI End-User Report Designer form.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignForm.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignForm class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignForm.ActiveDesignPanel">
+            <summary>
+                <para>Provides access to the currently active Design Panel of the XRDesignForm.
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, representing the active Design Panel.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignForm.DesignBarManager">
+            <summary>
+                <para>Gets the XRDesignForm object of the End-User Designer form.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignBarManager"/> object.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignForm.DesignDockManager">
+            <summary>
+                <para>Specifies the options of an <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/> object of a standard End-User Designer form. 
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/> object, containing dock panels of the End-User Designer. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignForm.DesignMdiController">
+            <summary>
+                <para>Gets the MDI Controller associated with the XRDesignForm instance.
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignMdiController"/> object, which represents the MDI Controller associated with the form.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignForm.OpenReport(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Loads the specified report instance to the XRDesignForm.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants, representing the report to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignForm.OpenReport(DevExpress.XtraReports.UI.XtraReport,DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Loads the specified report instance to the XRDesignForm with the specified look and feel settings.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants representing the report to be opened.
+
+
+            </param>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the End-User Designer form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignForm.OpenReport(System.String)">
+            <summary>
+                <para>Loads the report definition from the specified REPX file and opens it in the XRDesignForm.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> representing the full path to the report file (.REPX) to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignForm.OpenReport(System.String,DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Loads the report definition from the specified REPX file and opens it in the XRDesignForm with the specified look and feel settings.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> representing the full path to the report file (.REPX) to be opened.
+
+
+            </param>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the End-User Designer form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignForm.SetWindowVisibility(DevExpress.XtraReports.UserDesigner.DesignDockPanelType,System.Boolean)">
+            <summary>
+                <para>Sets the visibility of dock panels in the standard End-User Designer form.
+
+</para>
+            </summary>
+            <param name="designDockPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value identifying the dock panel(s) of the End-User Designer.
+
+            </param>
+            <param name="visible">
+		<b>true</b> to display the dock panel(s); otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.IDesignForm">
+
+            <summary>
+                <para>When implemented by a class, provides main methods for the End-User Report Designer form.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.IDesignForm.DesignMdiController">
+            <summary>
+                <para>When implemented by a class, gets the MDI Controller associated with the design form.
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignMdiController"/> object, which represents the MDI Controller associated with the form.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.IDesignForm.IsDisposed">
+            <summary>
+                <para>For internal use. Gets a value indicating whether the form has been disposed of.
+</para>
+            </summary>
+            <value><b>true</b> if the form has been disposed of; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.IDesignForm.OpenReport(DevExpress.XtraReports.UI.XtraReport,DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Loads the specified report instance to the IDesignForm with the specified look and feel settings.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants representing the report to be opened.
+
+
+            </param>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object, which specifies the look and feel settings applied to the End-User Designer form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.IDesignForm.OpenReport(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Loads the specified report instance to the IDesignForm.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants representing the report to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.IDesignForm.SetWindowVisibility(DevExpress.XtraReports.UserDesigner.DesignDockPanelType,System.Boolean)">
+            <summary>
+                <para>If implemented by a class, sets the visibility of dock panels in the End-User Designer.
+
+
+</para>
+            </summary>
+            <param name="designDockPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value identifying the dock panel(s) of the End-User Designer.
+
+            </param>
+            <param name="visible">
+		<b>true</b> to display the dock panel(s); otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.IDesignForm.Show">
+            <summary>
+                <para>Shows the End-User Designer form.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.IDesignForm.ShowDialog">
+            <summary>
+                <para>Shows the End-User Designer form, modally.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Windows.Forms.DialogResult"/> enumeration value.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UI.ReportDesignTool">
+
+            <summary>
+                <para>Represents an instrument for report editing.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.#ctor(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Initializes a new instance of the ReportDesignTool class with the specified report.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UI.ReportDesignTool.DesignForm">
+            <summary>
+                <para>Provides access to the Designer form of the ReportDesignTool.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.XtraReports.UserDesigner.IDesignForm"/> interface (typically, an <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignForm"/> instance).
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UI.ReportDesignTool.DesignRibbonForm">
+            <summary>
+                <para>Provides access to the Ribbon Designer form of the ReportDesignTool.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.XtraReports.UserDesigner.IDesignForm"/> interface (typically, an <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignRibbonForm"/> instance).
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.Dispose">
+            <summary>
+                <para>Disposes of the ReportDesignTool object. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UI.ReportDesignTool.Report">
+            <summary>
+                <para>Provides access to the report assigned to the ReportDesignTool.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowDesigner(DevExpress.LookAndFeel.UserLookAndFeel,DevExpress.XtraReports.UserDesigner.DesignDockPanelType)">
+            <summary>
+                <para>Invokes the standard End-User Designer form using the specified look and feel settings, and with the specified design panels hidden.
+
+</para>
+            </summary>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the <b>End-User Designer</b> form.
+
+            </param>
+            <param name="hiddenPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value identifying the End-User Designer dock panels to be hidden.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowDesigner">
+            <summary>
+                <para>Invokes the standard End-User Designer form which allows a report to be edited by end-users.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowDesigner(DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Invokes the standard End-User Designer form which allows a report to be edited by end-users using the specified look and feel settings.
+</para>
+            </summary>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the <b>End-User Designer</b> form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowDesignerDialog(DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Invokes the standard End-User Designer form which is shown modally and allows a report to be edited by end-users using the specified look and feel settings.
+
+
+
+
+</para>
+            </summary>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the <b>End-User Designer</b> form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowDesignerDialog(DevExpress.LookAndFeel.UserLookAndFeel,DevExpress.XtraReports.UserDesigner.DesignDockPanelType)">
+            <summary>
+                <para>Invokes the standard End-User Designer form modally using the specified look and feel settings and with the specified design panels hidden.
+
+
+
+</para>
+            </summary>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the <b>Preview Form</b>.
+
+            </param>
+            <param name="hiddenPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value identifying the End-User Designer dock panels to be hidden.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowDesignerDialog">
+            <summary>
+                <para>Invokes the standard End-User Designer form modally. This form allows a report to be edited by end-users.
+
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowRibbonDesigner(DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Invokes the Ribbon End-User Designer form which allows a report to be edited by end-users using the specified look and feel settings.
+</para>
+            </summary>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the <b>End-User Designer</b> form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowRibbonDesigner(DevExpress.LookAndFeel.UserLookAndFeel,DevExpress.XtraReports.UserDesigner.DesignDockPanelType)">
+            <summary>
+                <para>Invokes the Ribbon End-User Designer form using the specified look and feel settings, and with the specified design panels hidden.
+
+</para>
+            </summary>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the <b>End-User Designer</b> form.
+
+            </param>
+            <param name="hiddenPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value identifying the End-User Designer dock panels to be hidden.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowRibbonDesigner">
+            <summary>
+                <para>Invokes the Ribbon End-User Designer form which allows a report to be edited by end-users.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowRibbonDesignerDialog">
+            <summary>
+                <para>Invokes the Ribbon End-User Designer form modally. This form allows a report to be edited by end-users.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowRibbonDesignerDialog(DevExpress.LookAndFeel.UserLookAndFeel,DevExpress.XtraReports.UserDesigner.DesignDockPanelType)">
+            <summary>
+                <para>Invokes the Ribbon End-User Designer form modally, using the specified look and feel settings, and with the specified design panels hidden.
+
+</para>
+            </summary>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the <b>End-User Designer</b> form.
+
+            </param>
+            <param name="hiddenPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value identifying the End-User Designer dock panels to be hidden.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UI.ReportDesignTool.ShowRibbonDesignerDialog(DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Invokes the Ribbon End-User Designer form modally, using the specified look and feel settings.
+</para>
+            </summary>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look and feel settings applied to the <b>End-User Designer</b> form.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignToolBox">
+
+            <summary>
+                <para>Represents the Toolbox control used to create an End-User Designer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignToolBox.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignToolBox class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignToolBox.GroupsStyle">
+            <summary>
+                <para>Gets or sets the style for presenting the groups' contents.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroupStyle"/> value specifying how the groups' contents are presented.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignToolBox.SmallImages">
+            <summary>
+                <para>Gets or sets an object which serves as the source of the small images used in the toolbox.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ImageList"/> object which represents the source of the small images. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignToolBox.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object associated with the XRDesignToolBox.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, specifying the Design Panel assigned to the current <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignToolBox"/> object.
+
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignPropertyGrid">
+
+            <summary>
+                <para>Represents the <b>Properties Window</b> control which is used to create an End-User Designer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignPropertyGrid.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignPropertyGrid class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignPropertyGrid.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object associated with the XRDesignPropertyGrid.
+
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object assigned to the current XRDesignPropertyGrid object.
+
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase">
+
+            <summary>
+                <para>The base class for the form used to show the End-User Designer form for a particular report.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignFormExBase class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.DesignDockManager">
+            <summary>
+                <para>Specifies the options of an <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/> object of a standard End-User Designer form.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignDockManager"/> object that contains dock panels of the End-User Designer.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.DesignPanel">
+            <summary>
+                <para>Gets or sets the Design Panel used to edit a report in the current End-User Designer form.
+
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object, which represents the Design Panel associated with the form.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.FileName">
+            <summary>
+                <para>Gets or sets the path (including the file name) where the report currently being edited in the End-User Designer will be saved. A report definition is usually saved to a REPX file.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> representing the path (including the filename) to a REPX file.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.OpenReport(System.String,DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Loads a report definition from the specified REPX file, opens it into the form's active Design Panel, and applies the specified look-and-feel settings to the current End-User Designer form.
+
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> representing the full path to the report file (.REPX) to be opened.
+
+
+            </param>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look-and-feel settings applied to the End-User Designer form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.OpenReport(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Opens the specified report in the form's active Design Panel.
+
+
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants representing the report to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.OpenReport(DevExpress.XtraReports.UI.XtraReport,DevExpress.LookAndFeel.UserLookAndFeel)">
+            <summary>
+                <para>Opens the specified report in the form's active Design Panel, and applies the specified look-and-feel settings to the current End-User Designer form.
+
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object, or one of its descendants representing the report to be opened.
+
+
+            </param>
+            <param name="lookAndFeel">
+		A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object which specifies the look-and-feel settings applied to the End-User Designer form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.OpenReport(System.String)">
+            <summary>
+                <para>Loads the report from the specified REPX file, and opens it in the form's active Design Panel.
+
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> representing the full path to the report file (.REPX) to be opened.
+
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.ReportStateChanged">
+            <summary>
+                <para>Occurs when the <see cref="P:DevExpress.XtraReports.UserDesigner.XRDesignPanel.ReportState"/> property has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.SaveReport(System.String)">
+            <summary>
+                <para>Saves the definition (layout and configuration) of the report currently being edited in the <b>End-User Designer</b> form to the specified path.
+
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> containing the full path (including the file name) specifying where the report's definition will be saved.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.SaveReportAs">
+            <summary>
+                <para>Saves the configuration of the report which is currently open in the End-User Designer to a file. The folder it is saved to, is specified in the <b>Save As</b> window.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFormExBase.SetWindowVisibility(DevExpress.XtraReports.UserDesigner.DesignDockPanelType,System.Boolean)">
+            <summary>
+                <para>Sets the visibility of design dock panels in the End-User Designer.
+
+
+</para>
+            </summary>
+            <param name="designDockPanels">
+		A <see cref="T:DevExpress.XtraReports.UserDesigner.DesignDockPanelType"/> enumeration value identifying the dock panel(s) of the End-User Designer.
+
+            </param>
+            <param name="visible">
+		<b>true</b> to display the dock panel(s); otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignFieldList">
+
+            <summary>
+                <para>Represents the Field List panel within an End-User Designer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignFieldList.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignFieldList class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignFieldList.ShowComplexNodesFirst">
+            <summary>
+                <para>Specifies whether complex nodes should be displayed atop simple nodes in the Field List.
+</para>
+            </summary>
+            <value><b>true</b> to show complex nodes first; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignFieldList.SortOrder">
+            <summary>
+                <para>Specifies the sorting order of the Field List nodes.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.SortOrder"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignFieldList.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object associated with the XRDesignFieldList.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object assigned to the current XRDesignFieldList object.
+
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraReports.UserDesigner.XRDesignErrorList">
+
+            <summary>
+                <para>Represents the Scripts Errors panel within an End-User Designer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraReports.UserDesigner.XRDesignErrorList.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XRDesignErrorList class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignErrorList.SelectedError">
+            <summary>
+                <para>Provides access to the description of the selected error.
+</para>
+            </summary>
+            <value>A <see cref="T:System.CodeDom.Compiler.CompilerError"/> object that represents a compiler error or warning.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraReports.UserDesigner.XRDesignErrorList.XRDesignPanel">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object associated with the XRDesignErrorList.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UserDesigner.XRDesignPanel"/> object assigned to the current XRDesignErrorList object.
+
+</value>
+
+
+        </member>
+    </members>
+</doc>
