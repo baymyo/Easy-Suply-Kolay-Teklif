@@ -14,3 +14,5 @@ Ne yapmaktadır sizin için sisteme girilen hazır ürün dataları üzerinden e
 Ürünlerin toplanacağı adresten edeceğiniz kar oranına kadar herşeyi sizin için hesaplamakla kalmaz birde faturanızı oluşturur.
 
 Yapabileceklerini saymakla bitiremiyorum aslında tedarikçilere EXCEL dosyalarını gönderin onlar fiyatlarını güncellesin sizde sisteme import edin bu kadar.
+
+Fiyat güncelleme tarihlerini sizin için tuar her firmanın fiyat güncelleme tarihi geldiğinde size uyarı verir.
